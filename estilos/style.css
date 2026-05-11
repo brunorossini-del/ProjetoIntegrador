@@ -1,17 +1,20 @@
 .logo {
     position: relative;
-    left: 20px;
+    left: 60px;
     float: left;
     text-indent: 20px;
     /*pixels de distância do elemento para a borda*/
     width: 20%;
 }
 .cabe ul{
+    position: relative;
+    top: 20px;
     /*código para a lista*/
     float: left;
     width: 75%;
     margin: 50px 0px 0px 20px;
     text-align: left;
+    
 }
 .cabe ul li{
     /*codigo para cada linha da lista*/
@@ -24,7 +27,9 @@
     font-size: 1.2em;
     cursor:pointer;
     /*elemento interagível ou clicável*/
+    padding-left: 20px;
 }
 .cabe ul li:hover{
-    color:   rgb(0, 2, 93);
+    color:   rgb(185, 87, 1);
+    font-size: 1.3em;
 }
