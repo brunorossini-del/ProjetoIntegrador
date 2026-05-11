@@ -1,0 +1,30 @@
+.logo {
+    position: relative;
+    left: 20px;
+    float: left;
+    text-indent: 20px;
+    /*pixels de distância do elemento para a borda*/
+    width: 20%;
+}
+.cabe ul{
+    /*código para a lista*/
+    float: left;
+    width: 75%;
+    margin: 50px 0px 0px 20px;
+    text-align: left;
+}
+.cabe ul li{
+    /*codigo para cada linha da lista*/
+    text-decoration: none;
+    display: inline;
+    /*elementos na mesma linha*/
+    padding: 5px;
+    color: rgba(224, 224, 216);
+    font-family: 'Finger Paint', cursive;
+    font-size: 1.2em;
+    cursor:pointer;
+    /*elemento interagível ou clicável*/
+}
+.cabe ul li:hover{
+    color:   rgb(0, 2, 93);
+}
