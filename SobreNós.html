@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
-
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
@@ -29,6 +28,7 @@
             font-family: "Playfair Display", serif;
             font-size: 30px;
             padding: 15px;
+            color: rgb(110, 52, 1);
         }
 
         .clear {
@@ -69,13 +69,9 @@
             background-image: url(img/banner\ 1.png);
         }
 
-        p {
-            font-family: "Oswald", sans-serif;
-        }
-
 
         .fundo_mantra {
-            background-image: linear-gradient(to bottom, rgb(222, 222, 222), rgb(222, 222, 222), rgb(255, 255, 255));
+            background-image: linear-gradient(to bottom, rgb(222, 222, 222), rgb(235, 235, 235), rgb(255, 255, 255));
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -91,7 +87,7 @@
             background-repeat: no-repeat;
             box-sizing: border-box;
             border-radius: 15px;
-            background-color: rgb(146, 146, 146);
+            background-color: rgba(185, 87, 1, 0.471);
         }
 
         .MantraA {
@@ -105,21 +101,39 @@
         .MantraC {
             font-family: "Oswald", sans-serif;
         }
-        .rodapé_fundo{
 
-        }
-        .rodapé{
+        .rodapé_fundo {}
+
+        .rodapé {
             width: 20%;
             height: 600px;
             background-size: 100%;
             background-repeat: no-repeat;
             box-sizing: border-box;
         }
-        .rodapéA{
+
+        .rodapéA {
             background-image: url(img/logo\ 5.png);
         }
-        .rodapéB{
-            background-image:url(img/15.jpg);
+
+        .rodapéB {
+            background-image: url(img/15.jpg);
+        }
+
+        .br {
+            background-color: white;
+        }
+        .slogan_roda {
+            margin-right: 50px;
+            width: 200px;
+            font-family: "Poller One", sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(224, 224, 216);
+            line-height: 40px;
+            padding-top: 20px;
+
+      
         }
     </style>
 </head>
@@ -170,6 +184,7 @@
         <div class="titulo">
             <h1>Mantras</h1>
         </div>
+        <br>
         <div class="fundo_mantra">
             <div class="item_mantra MantraA">
                 <p>1. Família
@@ -178,7 +193,7 @@
                 </p>
             </div>
             <div class="item_mantra MantraB">
-                <p> 
+                <p>
                     2. Exclusividade
                     Gelatos fabricados para cada indivíduo que degusta, atendendo pessoas com diabetes, colesterol ou
                     padrões de vida que não consomem açúcar e também amantes de gelato que adoram degustar.
@@ -190,6 +205,23 @@
                     aqui nós fabricamos cada sabor, contendo menos oxigênio no gelato, menos açúcar, glúten, ou seja,
                     com todas as características de um gelato, porém com os acréscimos exclusivos.
                 </p>
+            </div>
+        </div>
+        <div class="br">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="fundo_rodapé roda">
+            <img src="img/logo 5.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
             </div>
         </div>
 </body>

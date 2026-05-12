@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(222, 222, 222);
+        }
+
+        .menu {
+            background-image: url(img/banner\ 9.png);
+            width: 100%;
+            height: 200px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            padding: 15px;
+            color: rgb(110, 52, 1);
+        }
+
+        .titulo2 {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            padding: 15px;
+            color: rgb(222, 222, 222);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .conteudo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+
+        }
+
+        .itemA {
+            background-image: url(img/Sorvete\ Café\ Branco.png);
+            position: relative;
+            bottom: 125px;
+
+        }
+
+        .itemB {
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            padding: 0px 50px;
+            font-size: 23px;
+            color: rgb(0, 0, 0);
+        }
+
+        .itemC {
+            background-image: url(img/Sorvete\ Morango.png);
+            position: relative;
+            bottom: 150px;
+            
+        }
+
+        .itemD {
+            background-image: url(img/Sorvete\ Melão\ com\ Presunto.png);
+            position: relative;
+            bottom: 175px;
+
+        }
+
+        .itemE {
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            padding: 0px 50px;
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+        }
+
+        .itemF {
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            padding: 0px 50px;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .container {
+            background-image: linear-gradient(#6E3401,#d3d1d1 );
+            border-radius: 10px;
+            height: 300px;
+        }
+
+        .slogan_roda {
+            margin-right: 50px;
+            width: 200px;
+            font-family: "Poller One", sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(224, 224, 216);
+            line-height: 40px;
+            padding-top: 20px;
+
+      
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="cabe">
+            <div class="logo">
+                <img src="img/logo 5.png" width="200px">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                    <li>PRODUTOS</li>
+                    <li>EVENTOS</li>
+                    <li>LOCALIZAÇÃO</li>
+                    <li>PAINEL DE SATISFAÇÃO</li>
+                    <li>SIGA A GENTE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <nav class="titulo">
+            <br>
+            <h1>
+                Extravagância em sabor,<br>
+                Excelência na novidade!
+            </h1>
+        </nav>
+<br>
+<br>
+<br>
+        <div class="container">
+            <h2 class="titulo2">Café Branco</h2>
+            <div class="conteudo">
+                <div class="item itemA"></div>
+                <div class="item itemB">
+                    <p>
+                        Uma parente do criador da Me Gusta deu uma
+                        sugestão de sabor, sendo o café; Elizandro criou esse sabor de gelato usando
+                        suas especiarias e técnicas. Mas, na Me Gusta o céu é o limite, gostamos de
+                        aprimorar e sempre inovar até mesmo nas inovações, então, com muitos estudos
+                        Elizandro conseguiu criar o novo sabor de café, o café branco, com uma
+                        qualidade aprimorada do gelato inicial de café, esse novo sabor conta com pedaços
+                        pequenos de café torrado, entregando aroma, sabor e experiência.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <h2 class="titulo2">Morango sem Açúcar</h2>
+            <div class="conteudo">
+                <div class="item itemE">
+                    <p>
+                        Um sabor tradicional no mundo todo,
+porém Elizandro decidiu priorizar a autenticidade, criou uma versão adaptada
+para pessoas diabéticas ou que simplesmente não consomem açúcar mas estão com
+“aquela vontade de comer um docinho”, então foi criado o Fresa sin azúcar
+inovando com seu sabor intenso.
+                    </p>
+                </div>
+                    <div class="item itemC"></div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <h2 class="titulo2">Melão com Presunto</h2>
+            <div class="conteudo">
+                <div class="item itemD"></div>
+                <div class="item itemF">
+                    <p>
+                        Um sabor que honra o nosso mantra na exclusividade, um sabor exótico com a
+refrescância do melão e a experiência de sentir um sabor exótico, deixando o
+degustador em dúvida se é gostoso ou incrível. Sua aparência é apetitosa e
+encantadora, agradando desde um adulto especializado em degustar gelatos até
+uma criança tendo uma nova experiência ao provar esse sabor inédito.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+         <div class="fundo_rodapé roda">
+            <img src="img/logo 5.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
+        </div>
+</body>
+
+</html>
