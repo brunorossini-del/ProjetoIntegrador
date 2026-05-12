@@ -36,24 +36,21 @@
         }
 
         .conteudo {
-            background-color: rgb(222, 222, 222);
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+
+
         }
 
         .item {
             width: 20%;
-            height: 1000px;
-            margin: 10px;
-            flex-grow: 0;
-            flex-shrink: 1;
-            border-radius: 10px;
-            background-size: 90%;
+            height: 600px;
+            background-size: 100%;
             background-repeat: no-repeat;
-            background-position: center;
+            box-sizing: border-box;
+
         }
 
         .itemA {
@@ -61,11 +58,68 @@
         }
 
         .itemB {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            padding: 0px 50px;
+            font-size: 23px;
         }
 
         .itemC {
             background-image: url(img/banner\ 1.png);
+        }
+
+        p {
+            font-family: "Oswald", sans-serif;
+        }
+
+
+        .fundo_mantra {
+            background-image: linear-gradient(to bottom, rgb(222, 222, 222), rgb(222, 222, 222), rgb(255, 255, 255));
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        .item_mantra {
+            padding: 15px;
+            width: 20%;
+            height: 200px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background-color: rgb(146, 146, 146);
+        }
+
+        .MantraA {
+            font-family: "Oswald", sans-serif;
+        }
+
+        .MantraB {
+            font-family: "Oswald", sans-serif;
+        }
+
+        .MantraC {
+            font-family: "Oswald", sans-serif;
+        }
+        .rodapé_fundo{
+
+        }
+        .rodapé{
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+        .rodapéA{
+            background-image: url(img/logo\ 5.png);
+        }
+        .rodapéB{
+            background-image:url(img/15.jpg);
         }
     </style>
 </head>
@@ -78,8 +132,8 @@
             </div>
             <div>
                 <ul>
-                    <li>HOME</li>
-                    <li>SOBRE NÓS</li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
                     <li>PRODUTOS</li>
                     <li>EVENTOS</li>
                     <li>LOCALIZAÇÃO</li>
@@ -89,9 +143,11 @@
             </div>
         </div>
         <div class="clear"></div>
+
         <div class="titulo">
             <h1>Sobre Nós</h1>
         </div>
+
         <div class="conteudo">
             <div class="item itemA"></div>
             <div class="item itemB">
@@ -110,6 +166,31 @@
                 </p>
             </div>
             <div class="item itemC"></div>
+        </div>
+        <div class="titulo">
+            <h1>Mantras</h1>
+        </div>
+        <div class="fundo_mantra">
+            <div class="item_mantra MantraA">
+                <p>1. Família
+                    Devido a história da gelateria, Me Gusta prioriza o valor da família, criando um ambiente
+                    confortável para as famílias ficarem a vontade.
+                </p>
+            </div>
+            <div class="item_mantra MantraB">
+                <p> 
+                    2. Exclusividade
+                    Gelatos fabricados para cada indivíduo que degusta, atendendo pessoas com diabetes, colesterol ou
+                    padrões de vida que não consomem açúcar e também amantes de gelato que adoram degustar.
+                </p>
+            </div>
+            <div class="item_mantra MantraC">
+                <p>3. Sabor
+                    Me gusta não usa bases, adição de açúcar, gordura saturada e muito menos compram sabores prontos,
+                    aqui nós fabricamos cada sabor, contendo menos oxigênio no gelato, menos açúcar, glúten, ou seja,
+                    com todas as características de um gelato, porém com os acréscimos exclusivos.
+                </p>
+            </div>
         </div>
 </body>
 

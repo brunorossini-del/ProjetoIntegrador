@@ -33,3 +33,29 @@
     color:   rgb(185, 87, 1);
     font-size: 1.3em;
 }
+.cabe a{
+            text-decoration: none;
+                color: rgba(224, 224, 216);
+        }
+        .cabe a:hover{
+             color:   rgb(185, 87, 1);
+    font-size: 1.0em;
+}
+
+
+
+
+.fundo_rodapé{
+    background-color: rgb(185, 87, 1);
+    width: 100%;
+    height: 200px;
+}
+
+.rodapé {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+        }
