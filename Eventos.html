@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="estilos/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
-         * {
+
+        * {
             margin: 0;
             padding: 0;
         }
@@ -33,10 +35,141 @@
         .clear {
             clear: both;
         }
+
+        /*----------------------------------------------------------------------------------------------------------*/
+
+        .fundo_banner {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+
+        .item_banner {
+            width: 250px;
+            height: 500px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .BannerA {
+            width: 250px;
+            height: 500px;
+        }
+
+        .BannerB {
+            width: 250px;
+            height: 500px;
+        }
+
+        .BannerC {
+            width: 250px;
+            height: 500px;
+        }
+
+        /*----------------------------------------------------------------------------------------------------------*/
+
+        .fundo_titulo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+
+        .item_titulo {
+            padding: 20px;
+            width: 300px;
+            height: 50px;
+            background-repeat: no-repeat;
+        }
+
+        .TituloA {
+           font-family: "Playfair Display", serif;
+        }
+
+        .TituloB {
+            font-family: "Playfair Display", serif;
+        }
+
+        .TituloC {
+            font-family: "Playfair Display", serif;
+        }
+
+        /*----------------------------------------------------------------------------------------------------------*/
+
+        .fundo_texto {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+
+        .item_texto {
+            padding: 15px;
+            width: 200px;
+            height: 50px;
+            background-repeat: no-repeat;
+        }
+
+        .TextoA {
+            font-family: "Oswald", sans-serif;
+            font-size: 20px;
+        }
+
+        .TextoB {
+            font-family: "Oswald", sans-serif;
+            font-size: 20px;
+        }
+
+        .TextoC {
+            font-family: "Oswald", sans-serif;
+            font-size: 20px;
+        }
+
+         /*----------------------------------------------------------------------------------------------------------*/
+
+        .rodapé {
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        .rodapéA {
+            background-image: url(img/logo\ 5.png);
+        }
+
+        .rodapéB {
+            background-image: url(img/15.jpg);
+        }
+
+        .br {
+            background-color:rgb(222, 222, 222);
+        }
+        .slogan_roda {
+            margin-right: 50px;
+            width: 200px;
+            font-family: "Poller One", sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(224, 224, 216);
+            line-height: 40px;
+            padding-top: 20px;
+
+      
+        }
     </style>
 </head>
+
 <body>
-     <div class="menu">
+    <div class="menu">
         <div class="cabe">
             <div class="logo">
                 <img src="img/logo 5.png" width="200px">
@@ -45,11 +178,11 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="SobreNós.html">SOBRE NÓS</a></li>
-                    <li>PRODUTOS</li>
-                    <li>EVENTOS</li>
-                    <li>LOCALIZAÇÃO</li>
-                    <li>PAINEL DE SATISFAÇÃO</li>
-                    <li>SIGA A GENTE</li>
+                    <li><a href="Produtos.html">PRODUTOS</a></li>
+                    <li><a href="Eventos.html">EVENTOS</a></li>
+                    <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="Painel_Satisfação.html">PAINEL SATISFAÇÃO</a></li>
+                    <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
                 </ul>
             </div>
         </div>
@@ -58,5 +191,88 @@
         <div class="titulo">
             <h1>Eventos</h1>
         </div>
+
+        <!------------------------------------------------------------------------------------------>
+
+        <div class="fundo_titulo">
+            <div class="item_titulo TituloA">
+                <h1>Insta com Me Gusta</h1>
+            </div>
+            <div class="item_titulo TituloB">
+                <h1>Sexta das crianças!</h1>
+            </div>
+
+            <div class="item_titulo TituloC">
+                <h1>Na mosca!</h1>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------>
+
+        <div class="clear"></div>
+        <div class="fundo_banner">
+            <div class="item_banner BannerA">
+                <img src="img/banner insta.png">
+            </div>
+
+            <div class="item_banner BannerB">
+                <img src="img/banner palhaço.png">
+            </div>
+
+            <div class="item_banner BannerC">
+                <img src="img/banner acerte o peso.png">
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------>
+
+        <div class="fundo_texto">
+            <div class="item_texto TextoA">
+                <P>Poste uma foto com o gelato, apenas do gelato ou do ambiente no instagram e
+                    marque a gelateria para ganhar desconto no seu gelato</P>
+            </div>
+            <div class="item_texto TextoB">
+                <p>As sextas-feiras, Me Gusta fica com um palhaço ou mágico
+                    dentro do estabelecimento alegrando as famílias e crianças</p>
+            </div>
+
+            <div class="item_texto TextoC">
+                <p>Aos domingos, o atendente da Me Gusta escolherá um peso
+                    específico e os clientes que pegarem o gelato e acertarem o peso escolhido pelo
+                    atendente ganhará o gelato que pegou pelo maior mérito do cliente.</p>
+            </div>
+        </div>
+
+        <div class="br">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="fundo_rodapé roda">
+            <img src="img/logo 5.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
+        </div>
 </body>
+
 </html>
