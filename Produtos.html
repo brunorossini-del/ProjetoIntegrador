@@ -38,19 +38,19 @@
 
 
         .fundo {
-            background-image: url("img/4.jpg");
+            background-image: url("img/banner\ produtos.png");
             width: 100%;
             height: 300px;
             /* Ajustado para bater com a altura da imagem interna */
             background-position: right;
-            background-size: 50% 100%;
+            background-size: 75% 100%;
             /* Ocupa 50% da largura e 100% da altura */
             background-repeat: no-repeat;
             
         }
 
         .meio {
-            width: 50%;
+            width: 25%;
             height: 300px;
             overflow: hidden;
             
@@ -64,6 +64,48 @@
         .meio:hover {
             width: 100%;
             transition: width 3s;
+        }
+        .conteiner_img{
+            width: 80%;
+            margin: auto ;
+            background-color:  rgb(110, 52, 1);
+            padding: 15px;
+            border-radius: 20px;
+      
+        }
+
+        /*----------------------------------------------------------------------------------------------------------*/
+
+        .rodapé {
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        .rodapéA {
+            background-image: url(img/logo\ 5.png);
+        }
+
+        .rodapéB {
+            background-image: url(img/15.jpg);
+        }
+
+        .br {
+            background-color:rgb(222, 222, 222);
+        }
+        .slogan_roda {
+            margin-right: 50px;
+            width: 200px;
+            font-family: "Poller One", sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(224, 224, 216);
+            line-height: 40px;
+            padding-top: 20px;
+
+      
         }
     </style>
 </head>
@@ -81,7 +123,7 @@
                     <li><a href="Produtos.html">PRODUTOS</a></li>
                     <li><a href="Eventos.html">EVENTOS</a></li>
                     <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
-                    <li><a href="Painel_Satisfação.html">PAINEL SATISFAÇÃO</a></li>
+                    <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
                     <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
                 </ul>
             </div>
@@ -91,11 +133,33 @@
             <h1>Produtos</h1>
         </div>
 
-        <div class="fundo">
-            <div class="meio">
-                <img src="img/14.jpg">
+        <div class="conteiner_img">
+            <div class="fundo">
+                <div class="meio">
+                    <a href="ProdutosExóticos.html"><img src="img/banner movel.png"></a>
+                </div>
             </div>
         </div>
-</body>
+        <div class="br">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="fundo_rodapé roda">
+            <img src="img/logo 5.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
+        </div>
 
+</body>
 </html>
