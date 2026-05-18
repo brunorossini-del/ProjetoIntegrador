@@ -7,8 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
-
         * {
             margin: 0;
             padding: 0;
@@ -36,9 +34,20 @@
             clear: both;
         }
 
+        .titulo h1 {
+            font-family: "Playfair Display", serif;
+        }
+
+        .titulo_insta {
+            font-family: "Playfair Display", serif;
+            text-align: center;
+            font-size: 15px;
+            padding: 25px;
+        }
+
         /*----------------------------------------------------------------------------------------------------------*/
 
-        .fundo_banner {
+        .fundo_linha1 {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -47,31 +56,34 @@
 
         }
 
-        .item_banner {
+        .item_linha1 {
             width: 250px;
-            height: 500px;
+            height: 200px;
             background-size: 100%;
             background-repeat: no-repeat;
+            overflow: hidden;
+
         }
 
-        .BannerA {
+        .LinhaA {
             width: 250px;
-            height: 500px;
+            height: 200px;
         }
 
-        .BannerB {
+        .LinhaB {
             width: 250px;
-            height: 500px;
+            height: 200px;
         }
 
-        .BannerC {
+        .LinhaC {
             width: 250px;
-            height: 500px;
+            height: 200px;
         }
 
         /*----------------------------------------------------------------------------------------------------------*/
 
-        .fundo_titulo {
+
+        .fundo_linha2 {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -80,28 +92,34 @@
 
         }
 
-        .item_titulo {
-            padding: 20px;
-            width: 300px;
-            height: 50px;
+        .item_linha2 {
+            padding: 50px;
+            width: 250px;
+            height: 200px;
+            background-size: 100%;
             background-repeat: no-repeat;
+            overflow: hidden;
+
         }
 
-        .TituloA {
-           font-family: "Playfair Display", serif;
+        .LinhaD {
+            width: 250px;
+            height: 200px;
         }
 
-        .TituloB {
-            font-family: "Playfair Display", serif;
+        .LinhaE {
+            width: 250px;
+            height: 200px;
         }
 
-        .TituloC {
-            font-family: "Playfair Display", serif;
+        .LinhaF {
+            width: 250px;
+            height: 200px;
         }
 
         /*----------------------------------------------------------------------------------------------------------*/
 
-        .fundo_texto {
+        .fundo_linha3 {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -110,32 +128,33 @@
 
         }
 
-        .item_texto {
-            padding: 15px;
-            width: 200px;
-            height: 50px;
+        .item_linha3 {
+            padding: 50px;
+            width: 250px;
+            height: 200px;
+            background-size: 100%;
             background-repeat: no-repeat;
+            overflow: hidden;
+            border-radius: 15px;
+
         }
 
-        .TextoA {
-            font-family: "Oswald", sans-serif;
-            font-size: 20px;
-            line-height: 2em;
+        .LinhaG {
+            width: 250px;
+            height: 200px;
         }
 
-        .TextoB {
-            font-family: "Oswald", sans-serif;
-            font-size: 20px;
-            line-height: 2em;
+        .LinhaH {
+            width: 250px;
+            height: 200px;
         }
 
-        .TextoC {
-            font-family: "Oswald", sans-serif;
-            font-size: 20px;
-            line-height: 2em;
+        .LinhaI {
+            width: 250px;
+            height: 200px;
         }
 
-         /*----------------------------------------------------------------------------------------------------------*/
+        /*----------------------------------------------------------------------------------------------------------*/
 
         .rodapé {
             width: 20%;
@@ -154,8 +173,9 @@
         }
 
         .br {
-            background-color:rgb(222, 222, 222);
+            background-color: rgb(222, 222, 222);
         }
+
         .slogan_roda {
             margin-right: 50px;
             width: 200px;
@@ -166,7 +186,7 @@
             line-height: 40px;
             padding-top: 20px;
 
-      
+
         }
     </style>
 </head>
@@ -190,73 +210,62 @@
             </div>
         </div>
         <div class="clear"></div>
-
         <div class="titulo">
-            <h1>Eventos</h1>
+            <h1>Siga a gente!</h1>
         </div>
-
-        <!------------------------------------------------------------------------------------------>
-
-        <div class="fundo_titulo">
-            <div class="item_titulo TituloA">
-                <h1>Insta com Me Gusta</h1>
-            </div>
-            <div class="item_titulo TituloB">
-                <h1>Sexta das crianças!</h1>
-            </div>
-
-            <div class="item_titulo TituloC">
-                <h1>Na mosca!</h1>
-            </div>
-        </div>
-
-        <!------------------------------------------------------------------------------------------>
-
         <div class="clear"></div>
-        <div class="fundo_banner">
-            <div class="item_banner BannerA">
-                <img src="img/banner insta.png">
+        <div class="titulo_insta">
+            <h1>Instagram</h1>
+        </div>
+
+        <!------------------------------------------------------------------------------------------>
+
+        <div class="fundo_linha1">
+            <div class="item_linha1 LinhaA">
+                <img src="img/banner 39.png">
+            </div>
+            <div class="item_linha1 LinhaB">
+                <img src="img/banner 40.png">
             </div>
 
-            <div class="item_banner BannerB">
-                <img src="img/banner palhaço.png">
-            </div>
-
-            <div class="item_banner BannerC">
-                <img src="img/banner acerte o peso.png">
+            <div class="item_linha1 LinhaC">
+                <img src="img/banner 02.png">
             </div>
         </div>
 
         <!------------------------------------------------------------------------------------------>
 
-        <div class="fundo_texto">
-            <div class="item_texto TextoA">
-                <P>Poste uma foto com o gelato, apenas do gelato ou do ambiente no instagram e
-                    marque a gelateria para ganhar desconto no seu gelato</P>
+        <div class="fundo_linha2">
+            <div class="item_linha2 LinhaD">
+                <img src="img/banner 03.png">
             </div>
-            <div class="item_texto TextoB">
-                <p>As sextas-feiras, Me Gusta fica com um palhaço ou mágico
-                    dentro do estabelecimento alegrando as famílias e crianças</p>
+            <div class="item_linha2 LinhaE">
+                <img src="img/banner 04.png">
             </div>
 
-            <div class="item_texto TextoC">
-                <p>Aos domingos, o atendente da Me Gusta escolherá um peso
-                    específico e os clientes que pegarem o gelato e acertarem o peso escolhido pelo
-                    atendente ganhará o gelato que pegou pelo maior mérito do cliente.</p>
+            <div class="item_linha2 LinhaF">
+                <img src="img/banner 05.png">
             </div>
         </div>
+
+        <!------------------------------------------------------------------------------------------>
+
+        <div class="fundo_linha3">
+            <div class="item_linha3 LinhaG">
+                <img src="img/banner 06.png">
+            </div>
+            <div class="item_linha2 LinhaH">
+                <img src="img/banner 07.png">
+            </div>
+
+            <div class="item_linha2 LinhaI">
+                <img src="img/banner 08.png">
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------------------------>
 
         <div class="br">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <br>
             <br>
             <br>
