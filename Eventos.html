@@ -51,11 +51,11 @@
 
         .fundo_banner {
             display: flex;
-
+            /*cria um contêiner flexível que permite alinhar, redimensionar e distribuir elementos*/
             flex-direction: row;
-            
+            /*organiza os elementos filhos lado a lado, da esquerda para a direita*/
             flex-wrap: wrap;
-
+            /*para os elementos filhos quebrem para próxima linha quado não houver espaço horizontal suficiente dentro do container pai*/
             justify-content: space-around;
             /*espaçamentos iguais em cada item*/
             text-align: center;
@@ -64,123 +64,175 @@
 
         .item_banner {
             width: 250px;
+            /*tamanho horizontal do banner*/
             height: 500px;
+            /*altura do banner*/
             background-size: 100%;
+            /*define que a imagem ocupe 100% da largura*/
             background-repeat: no-repeat;
+            /*para não repetir o banner*/
         }
 
         .BannerA {
             width: 250px;
+            /*tamanho horizontal do banner A*/
             height: 500px;
+            /*altura do banner A*/
         }
 
         .BannerB {
             width: 250px;
+            /*tamanho horizontal do banner B*/
             height: 500px;
+            /*altura do banner B*/
         }
 
         .BannerC {
             width: 250px;
+            /*tamanho horizontal do banner C*/
             height: 500px;
+            /*altura do banner C*/
         }
 
         /*----------------------------------------------------------------------------------------------------------*/
 
         .fundo_titulo {
             display: flex;
+            /*cria um contêiner flexível que permite alinhar, redimensionar e distribuir elementos*/
             flex-direction: row;
+            /*organiza os elementos filhos lado a lado, da esquerda para a direita*/
             flex-wrap: wrap;
+            /*para os elementos filhos quebrem para próxima linha quado não houver espaço horizontal suficiente dentro do container pai*/
             justify-content: space-around;
+            /*espaçamentos iguais em cada item*/
             text-align: center;
-
+            /*centralizando o banner ao centro*/
         }
 
         .item_titulo {
             padding: 20px;
+            /*espaçamento interno do título*/
             width: 300px;
+            /*tamanho horizontal do título*/
             height: 50px;
+            /*tamanho vertical do título*/
             background-repeat: no-repeat;
+            /*para não repetir o título*/
         }
 
         .TituloA {
            font-family: "Playfair Display", serif;
         }
-
+        /*fonte utilizada no título A*/
         .TituloB {
             font-family: "Playfair Display", serif;
         }
-
+        /*fonte utilizada no título B*/
         .TituloC {
             font-family: "Playfair Display", serif;
         }
-
+        /*fonte utilizada no título C*/
         /*----------------------------------------------------------------------------------------------------------*/
 
         .fundo_texto {
             display: flex;
+            /*cria um contêiner flexível que permite alinhar, redimensionar e distribuir elementos*/
             flex-direction: row;
+            /*organiza os elementos filhos lado a lado, da esquerda para a direita*/
             flex-wrap: wrap;
+            /*para os elementos filhos quebrem para próxima linha quado não houver espaço horizontal suficiente dentro do container pai*/
             justify-content: space-around;
+            /*espaçamentos iguais em cada item*/
             text-align: center;
-
+            /*centralizando o banner ao centro*/
         }
 
         .item_texto {
             padding: 15px;
+            /*espaçamento interno do texto*/
             width: 200px;
+            /*tamanho horizontal do texto*/
             height: 50px;
+            /*tamanho vertical do texto*/
             background-repeat: no-repeat;
+            /*para não repetir o texto*/
         }
 
         .TextoA {
             font-family: "Oswald", sans-serif;
+            /*fonte do texto A*/
             font-size: 20px;
+            /*tamanho do texto A*/
             line-height: 2em;
+            /*altura da linha do texto*/
         }
 
         .TextoB {
             font-family: "Oswald", sans-serif;
+            /*fonte do texto B*/
             font-size: 20px;
+            /*tamanho do texto B*/
             line-height: 2em;
+            /*altura da linha do texto*/
         }
 
         .TextoC {
             font-family: "Oswald", sans-serif;
+            /*fonte do texto C*/
             font-size: 20px;
+            /*tamanho do texto C*/
             line-height: 2em;
+            /*altura da linha do texto*/
         }
 
          /*----------------------------------------------------------------------------------------------------------*/
 
          .botao{
             background: #6b3e26;
+            /*cor do botão*/
             color: white;
+            /*cor do texto do botão*/
             width: 200px;
+            /*tamanho horizontal do botão*/
             height: 50px;
+            /*tamanho da altura do botão*/
             cursor: pointer;
+            /*para ativar o cursor quando o coloca em cima do botão*/
             position: relative;
+            /*permite deslocar o botão*/
             left: 655px;
+            /*posição horizontal do botão*/
             top: 200px;
+            /*posição vertical do botão*/
             font-size: 20px;
+            /*tamanho do texto do botão*/
             border-radius: 15px;
+            /*arredondamento do botão*/
          }
 
          .botao:hover{
-            background: #7f4a2d;
+            background: #7f4a2d; 
+            /*cor do botão quando o cursor está em cima*/
          }
          
 /*----------------------------------------------------------------------------------------------------------*/
 
         .rodapé {
             width: 20%;
+            /*largura do rodapé*/
             height: 600px;
+            /*altura do rodapé*/
             background-size: 100%;
+            /*define que a imagem ao fundo ocupe 100% da tela*/
             background-repeat: no-repeat;
+            /*para não repetir*/
             box-sizing: border-box;
+            /*define como a largura e a altura de um elemento são calculadas*/
         }
 
         .rodapéA {
             background-image: url(img/logo\ 5.png);
+            /*imagem da logo*/
         }
 
         .rodapéB {
@@ -192,13 +244,21 @@
         }
         .slogan_roda {
             margin-right: 50px;
+            /*espaço externo do lado direito de um elemento*/
             width: 200px;
+            /*largura horizontal do elemento*/
             font-family: "Poller One", sans-serif;
+            /*fonte do slogan*/
             text-align: center;
+            /*centralizando o slogan*/
             font-size: 22px;
+            /*tamanho do slogan*/
             color: rgba(224, 224, 216);
+            /*cor do slogan*/
             line-height: 40px;
+            /*altura da linha*/
             padding-top: 20px;
+            /*espaçamento supetior do slogan*/
 
       
         }
@@ -207,108 +267,154 @@
 
 <body>
     <div class="menu">
+        <!--banner ao fundo do cabeçalho-->
         <div class="cabe">
+            <!--cabeçalho-->
             <div class="logo">
+                <!--div para a logo-->
                 <img src="img/logo 5.png" width="200px">
+                <!--logo-->
             </div>
             <div>
+            <!--div para a lista-->
                 <ul>
+                <!--lista não ordenada-->
                     <li><a href="index.html">HOME</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Produtos.html">PRODUTOS</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Eventos.html">EVENTOS</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                 </ul>
             </div>
         </div>
         <div class="clear"></div>
-
+        <!--fechar o float-->
         <div class="titulo">
+            <!--características do título-->
             <h1>Eventos</h1>
+            <!--título-->
         </div>
 
         <!------------------------------------------------------------------------------------------>
 
-        <div class="fundo_titulo">
-            <div class="item_titulo TituloA">
+        <div class="fundo_titulo"> 
+            <!--div para alterar posicionamento dos títulos-->
+            <div class="item_titulo TituloA"> 
+                <!--características do título A-->
                 <h1>Insta com Me Gusta</h1>
+                <!--Título A-->
             </div>
             <div class="item_titulo TituloB">
+                <!--características do título B-->
                 <h1>Sexta das crianças!</h1>
+                <!--Título B-->
             </div>
 
             <div class="item_titulo TituloC">
+                <!--características do título C-->
                 <h1>Na mosca!</h1>
+                <!--Título C-->
             </div>
         </div>
 
         <!------------------------------------------------------------------------------------------>
 
         <div class="clear"></div>
+        <!--fechou o float-->
         <div class="fundo_banner">
+            <!--características atribuida aos banners-->
             <div class="item_banner BannerA">
+                <!--características do banner A-->
                 <img src="img/banner insta.png">
+                <!--banner A-->
             </div>
 
             <div class="item_banner BannerB">
+                <!--características do banner B-->
                 <img src="img/banner palhaço.png">
+                <!--banner B-->
             </div>
 
             <div class="item_banner BannerC">
+                <!--características do banner C-->
                 <img src="img/banner acerte o peso.png">
+                <!--banner C-->
             </div>
         </div>
 
         <!------------------------------------------------------------------------------------------>
 
         <div class="fundo_texto">
+            <!--características dos textos-->
             <div class="item_texto TextoA">
+                <!--características do texto A-->
                 <P>Poste uma foto com o gelato, apenas do gelato ou do ambiente no instagram e
                     marque a gelateria para ganhar desconto no seu gelato</P>
+                    <!--texto A-->
             </div>
             <div class="item_texto TextoB">
+                <!--características do texto B-->
                 <p>As sextas-feiras, Me Gusta fica com um palhaço ou mágico
                     dentro do estabelecimento alegrando as famílias e crianças</p>
+                    <!--Texto B-->
             </div>
 
             <div class="item_texto TextoC">
+                <!--características do texto C-->
                 <p>Aos domingos, o atendente da Me Gusta escolherá um peso
                     específico e os clientes que pegarem o gelato e acertarem o peso escolhido pelo
                     atendente ganhará o gelato que pegou pelo maior mérito do cliente.</p>
+                    <!--Texto C-->
             </div>
         </div>
         <button class="botao"> Cadastre-se</button>
-
-        <div class="br">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <!--característicasdo botão "Cadastre-se"-->
+        <div class="br"> 
+            <!--características do quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
+            <br><!--quebra linha-->
         </div>
 
         <div class="fundo_rodapé roda">
+            <!--características do rodapé-->
             <img src="img/logo 5.png" height="200px" width="200px">
+            <!--logo do rodapé e seu tamanho-->
             <div class="down_down">
+                <!--bolinhas ao redor dos logos das redes sociais-->
                 <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <!--logo do facebook-->
                 <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <!--logo do whatsapp-->
                 <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+                <!--logo do instagram-->
             </div>
-            <div class="slogan_roda">
+            <div class="slogan_roda"> 
+                <!--características do slogan do rodapé-->
                 <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+                <!--slogan-->
             </div>
         </div>
 </body>
