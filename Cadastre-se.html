@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="estilos/style.css">
-
     <style>
         * {
             margin: 0;
@@ -36,13 +35,23 @@
             clear: both;
         }
 
-        .container {
+        HEAD .container {
             max-width: 900px;
             margin: 60px auto;
             background: #fff;
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+
+            padding: 40px;
+            border-radius: 20px;
+
             text-align: center;
         }
 
@@ -75,7 +84,6 @@
             color: rgba(224, 224, 216);
             line-height: 40px;
             padding-top: 20px;
-
 
         }
 
@@ -163,7 +171,7 @@
         .campo input:focus {
 
             border-color: #2563eb;
-
+            border-color: #eb2525;
             box-shadow: 0px 0px 10px rgba(37, 99, 235, 0.3);
         }
 
@@ -180,7 +188,7 @@
             border-radius: 12px;
 
             background-color: #2563eb;
-
+            background-color: #7b2700;
             color: white;
 
             font-size: 18px;
@@ -199,48 +207,87 @@
             transform: scale(1.02);
         }
     </style>
-</head>
 
-<body>
-    <div class="menu">
-        <div class="cabe">
-            <div class="logo">
-                <img src="img/logo 5.png" width="200px">
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
-                    <li><a href="Produtos.html">PRODUTOS</a></li>
-                    <li><a href="Eventos.html">EVENTOS</a></li>
-                    <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
-                    <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
-                    <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <br>
+    <head>
 
-
-        <div class="container">
-            <h1 class="titulo"> Cadastre - se</h1>
-        </div>
-
-        <div class="auxiliar">
-            <div class="fundo_rodapé roda">
-                <img src="img/logo 5.png" height="200px" width="200px">
-                <div class="down_down">
-                    <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
-                    <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+    <body>
+        <div class="menu">
+            <div class="cabe">
+                <div class="logo">
+                    <img src="img/logo 5.png" width="200px">
                 </div>
-                <div class="slogan_roda">
-                    <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+                <div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                        <li><a href="Produtos.html">PRODUTOS</a></li>
+                        <li><a href="Eventos.html">EVENTOS</a></li>
+                        <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                        <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
+                        <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
+            <div class="clear"></div>
+            <br>
+            <div class="container">
 
-</body>
+                <div class="registro">
 
+                    <h1>Cadastre-se</h1>
+
+                    <form>
+
+                        <!-- NOME -->
+                        <div class="campo">
+                            <label>Nome Completo</label>
+                            <input type="text" placeholder="Digite seu nome completo">
+                        </div>
+
+                        <!-- CPF -->
+                        <div class="campo">
+                            <label>CPF</label>
+                            <input type="text" placeholder="000.000.000-00">
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="campo">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Digite seu e-mail">
+                        </div>
+
+                        <!-- ENDEREÇO -->
+                        <div class="campo">
+                            <label>Endereço</label>
+                            <input type="text" placeholder="Rua, número e bairro">
+                        </div>
+
+                        <!-- TELEFONE -->
+                        <div class="campo">
+                            <label>Telefone</label>
+                            <input type="text" placeholder="(00) 00000-0000">
+                        </div>
+
+                        <!-- BOTÃO -->
+                        <button type="submit">Cadastrar</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="auxiliar">
+                <div class="fundo_rodapé roda">
+                    <img src="img/logo 5.png" height="200px" width="200px">
+                    <div class="down_down">
+                        <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+                    </div>
+                    <div class="slogan_roda">
+                        <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+                    </div>
+                </div>
+    </body>
 </html>

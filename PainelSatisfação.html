@@ -69,10 +69,12 @@
     }
 
     .rating input {
+      /*Cria a caixa interativa onde o usuário insere os dados*/
       display: none;
     }
 
     .rating label {
+      /*Cria a descrição textual do campo (ex: "Nome:" ou "Digite sua senha:")*/
       width: 40px;
       height: 40px;
       display: flex;
@@ -84,12 +86,12 @@
       transition: 0.5s;
     }
 
-    .rating input:checked+label {
+    .rating input:checked+label { /*o input fica marcado (checked); o label logo depois recebe: fundo marrom e texto branco; o "+" significa o próximo elemento imediatamente depois*/
       background: #6b3e26;
       color: #fff;
     }
 
-    .rating label:hover {
+    .rating label:hover {  /*Quando passar o mouse, fica com essa cor*/
       background: #cca68a;
     }
 
@@ -99,7 +101,7 @@
       border-radius: 10px;
       border: 2px solid #ccc;
       padding: 15px;
-      resize: none;
+      resize: none; /* é uma propriedade do CSS que impede o usuário de alterar o tamanho de um elemento na tela*/
       margin-bottom: 20px;
       font-family: "Oswald", sans-serif;
     }
@@ -186,6 +188,14 @@
       <p class="subtitle">Como foi sua experiência?</p>
 
       <div class="rating">
+        <!--input type radio; Cria um botão de escolha*/-->
+
+        <!--name nota; Faz todos os botões pertencerem ao mesmo grupo, permitindo selecionar apenas UM.*/-->
+
+        <!--id n0; Dá um identificador único ao botão.*/-->
+
+        <!--<label for="n0">0</label>; Cria o número visível. Quando o usuário clica no número, o botão correspondente é marcado..*/-->
+        
         <input type="radio" id="n0" name="nota"><label for="n0">0</label>
         <input type="radio" id="n1" name="nota"><label for="n1">1</label>
         <input type="radio" id="n2" name="nota"><label for="n2">2</label>
