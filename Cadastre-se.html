@@ -17,10 +17,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
 
 
-        body {
-            background-color: rgb(222, 222, 222);
-        }
-
         .menu {
             background-image: url(img/banner\ 9.png);
             width: 100%;
@@ -85,6 +81,120 @@
             top: 200px;
         }
 
+body{
+    background-color: rgb(222, 222, 222);
+    font-family: "Oswald", sans-serif;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FORMULÁRIO */
+
+.registro{
+
+    background-color: white;
+
+    width: 420px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.35);
+}
+
+/* TÍTULO */
+
+.registro h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #0f172a;
+
+    font-size: 40px;
+}
+
+/* CAMPOS */
+
+.campo{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+.campo label{
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 18px;
+}
+
+/* INPUTS */
+
+.campo input{
+
+    padding: 14px;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.campo input:focus{
+
+    border-color: #2563eb;
+
+    box-shadow: 0px 0px 10px rgba(37,99,235,0.3);
+}
+
+/* BOTÃO */
+
+button{
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-family: "Oswald", sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+
+    background-color: #1d4ed8;
+
+    transform: scale(1.02);
+}
 </style>
 </head>
 
@@ -112,9 +222,8 @@
 
 <div class="container">
   <h1 class="titulo"> Cadastre - se</h1>
-  
-  
 </div>
+
 <div class="auxiliar">
         <div class="fundo_rodapé roda">
             <img src="img/logo 5.png" height="200px" width="200px">
