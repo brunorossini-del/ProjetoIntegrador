@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastre-se</title>
-<link rel="stylesheet" href="estilos/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
 
 
         .menu {
@@ -35,15 +35,25 @@
             clear: both;
         }
 
-.container{
-  max-width:900px;
-  margin:60px auto;
-  
-  padding:40px;
-  border-radius:20px;
-  
-  text-align:center;
-}
+        HEAD .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+
+            padding: 40px;
+            border-radius: 20px;
+
+            text-align: center;
+        }
 
         .rodapé {
             width: 20%;
@@ -64,6 +74,7 @@
         .br {
             background-color: white;
         }
+
         .slogan_roda {
             margin-right: 50px;
             width: 200px;
@@ -73,322 +84,210 @@
             color: rgba(224, 224, 216);
             line-height: 40px;
             padding-top: 20px;
+
         }
-        .auxiliar{
+
+        .auxiliar {
             position: relative;
             top: 200px;
         }
 
-body{
-    background-color: rgb(222, 222, 222);
-    font-family: "Oswald", sans-serif;
-}
+        body {
+            background-color: rgb(222, 222, 222);
+            font-family: "Oswald", sans-serif;
+        }
 
-/* CONTAINER */
+        /* CONTAINER */
 
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
-/* FORMULÁRIO */
+        /* FORMULÁRIO */
 
-.registro{
+        .registro {
 
-    background-color: white;
+            background-color: white;
 
-    width: 420px;
+            width: 420px;
 
-    padding: 40px;
+            padding: 40px;
 
-    border-radius: 20px;
+            border-radius: 20px;
 
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.35);
-}
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+        }
 
-/* TÍTULO */
+        /* TÍTULO */
 
-.registro h1{
+        .registro h1 {
 
-    text-align: center;
+            text-align: center;
 
-    margin-bottom: 30px;
+            margin-bottom: 30px;
 
-    color: #0f172a;
+            color: #0f172a;
 
-    font-size: 40px;
-}
+            font-size: 40px;
+        }
 
-/* CAMPOS */
+        /* CAMPOS */
 
-.campo{
-    display: flex;
-    flex-direction: column;
+        .campo {
+            display: flex;
+            flex-direction: column;
 
-    margin-bottom: 20px;
-}
+            margin-bottom: 20px;
+        }
 
-.campo label{
+        .campo label {
 
-    margin-bottom: 8px;
+            margin-bottom: 8px;
 
-    color: #334155;
+            color: #334155;
 
-    font-size: 18px;
-}
+            font-size: 18px;
+        }
 
-/* INPUTS */
+        /* INPUTS */
 
-.campo input{
+        .campo input {
 
-    padding: 14px;
+            padding: 14px;
 
-    border: 2px solid #cbd5e1;
+            border: 2px solid #cbd5e1;
 
-    border-radius: 12px;
+            border-radius: 12px;
 
-    outline: none;
+            outline: none;
 
-    font-size: 16px;
+            font-size: 16px;
 
-    transition: 0.3s;
-}
+            transition: 0.3s;
+        }
 
-.campo input:focus{
+        .campo input:focus {
 
-    border-color: #eb2525;
+            border-color: #2563eb;
+            border-color: #eb2525;
+            box-shadow: 0px 0px 10px rgba(37, 99, 235, 0.3);
+        }
 
-    box-shadow: 0px 0px 10px rgba(37,99,235,0.3);
-}
+        /* BOTÃO */
 
-/* BOTÃO */
+        button {
 
-button{
+            width: 100%;
 
-    width: 100%;
+            padding: 15px;
 
-    padding: 15px;
+            border: none;
 
-    border: none;
+            border-radius: 12px;
 
-    border-radius: 12px;
+            background-color: #2563eb;
+            background-color: #7b2700;
+            color: white;
 
-    background-color: #7b2700;
+            font-size: 18px;
 
-    color: white;
-
-    font-size: 18px;
-
-    font-family: "Oswald", sans-serif;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-button:hover{
-
-    background-color: #1d4ed8;
-
-    transform: scale(1.02);
-}
-
-/* CONTAINER DO FORMULÁRIO */
-
-.registro{
-
-    width: 620px;
-
-    background-color: white;
-
-    padding: 40px;
-
-    border-radius: 20px;
-
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
-}
-
-/* TÍTULO */
-
-.registro h1{
-
-    text-align: center;
-
-    font-size: 60px;
-
-    margin-bottom: 30px;
-
-    color: rgb(110, 52, 1);
-
-    font-family: "Playfair Display", serif;
-}
-
-/* CAMPOS */
-
-.campo{
-
-    display: flex;
-
-    flex-direction: column;
-
-    margin-bottom: 20px;
-}
-
-/* LABEL */
-
-.campo label{
-
-    margin-bottom: 8px;
-
-    font-size: 18px;
-
-    color: #444;
-}
-
-/* INPUTS */
-
-.campo input{
-
-    padding: 14px;
-
-    border: 2px solid #d6d6d6;
-
-    border-radius: 12px;
-
-    font-size: 16px;
-
-    transition: 0.3s;
-}
-
-/* EFEITO NAS CAIXAS DE TEXTO*/
-
-.campo input:focus{
-
-    border-color: rgb(110, 52, 1);
-
-    box-shadow: 0px 0px 10px rgba(110,52,1,0.2);
-}
-
-/* BOTÃO */
-
-button{
-
-    width: 100%;
-
-    padding: 15px;
-
-    border: none;
-
-    border-radius: 12px;
-
-    background-color: rgb(110, 52, 1);
-
-    color: white;
-
-    font-size: 18px;
-
-    font-family: "Oswald", sans-serif;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-/* HOVER BOTÃO */
-
-button:hover{
-
-    background-color: rgb(85, 39, 0);
-
-    transform: scale(1.02);
-}
-</style>
-</head>
-
-<body>
-    <div class="menu">
-        <div class="cabe">
-            <div class="logo">
-                <img src="img/logo 5.png" width="200px">
+            font-family: "Oswald", sans-serif;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+
+            background-color: #1d4ed8;
+
+            transform: scale(1.02);
+        }
+    </style>
+
+    <head>
+
+    <body>
+        <div class="menu">
+            <div class="cabe">
+                <div class="logo">
+                    <img src="img/logo 5.png" width="200px">
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                        <li><a href="Produtos.html">PRODUTOS</a></li>
+                        <li><a href="Eventos.html">EVENTOS</a></li>
+                        <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                        <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
+                        <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
-                    <li>PRODUTOS</li>
-                    <li>EVENTOS</li>
-                    <li>LOCALIZAÇÃO</li>
-                    <li>PAINEL DE SATISFAÇÃO</li>
-                    <li>SIGA A GENTE</li>
-                </ul>
-            </div>
-        </div>
-        <div class="clear"></div>
-<br>
+            <div class="clear"></div>
+            <br>
+            <div class="container">
 
+                <div class="registro">
 
-<div class="container">
+                    <h1>Cadastre-se</h1>
 
-    <div class="registro">
+                    <form>
 
-        <h1>Cadastre-se</h1>
+                        <!-- NOME -->
+                        <div class="campo">
+                            <label>Nome Completo</label>
+                            <input type="text" placeholder="Digite seu nome completo">
+                        </div>
 
-        <form>
+                        <!-- CPF -->
+                        <div class="campo">
+                            <label>CPF</label>
+                            <input type="text" placeholder="000.000.000-00">
+                        </div>
 
-            <!-- NOME -->
-            <div class="campo">
-                <label>Nome Completo</label>
-                <input type="text" placeholder="Digite seu nome completo">
+                        <!-- EMAIL -->
+                        <div class="campo">
+                            <label>E-mail</label>
+                            <input type="email" placeholder="Digite seu e-mail">
+                        </div>
+
+                        <!-- ENDEREÇO -->
+                        <div class="campo">
+                            <label>Endereço</label>
+                            <input type="text" placeholder="Rua, número e bairro">
+                        </div>
+
+                        <!-- TELEFONE -->
+                        <div class="campo">
+                            <label>Telefone</label>
+                            <input type="text" placeholder="(00) 00000-0000">
+                        </div>
+
+                        <!-- BOTÃO -->
+                        <button type="submit">Cadastrar</button>
+
+                    </form>
+
+                </div>
+
             </div>
 
-            <!-- CPF -->
-            <div class="campo">
-                <label>CPF</label>
-                <input type="text" placeholder="000.000.000-00">
-            </div>
-
-            <!-- EMAIL -->
-            <div class="campo">
-                <label>E-mail</label>
-                <input type="email" placeholder="Digite seu e-mail">
-            </div>
-
-            <!-- ENDEREÇO -->
-            <div class="campo">
-                <label>Endereço</label>
-                <input type="text" placeholder="Rua, número e bairro">
-            </div>
-
-            <!-- TELEFONE -->
-            <div class="campo">
-                <label>Telefone</label>
-                <input type="text" placeholder="(00) 00000-0000">
-            </div>
-
-            <!-- BOTÃO -->
-            <button type="submit">Cadastrar</button>
-
-        </form>
-
-    </div>
-
-</div>
-
-
-<div class="auxiliar">
-        <div class="fundo_rodapé roda">
-            <img src="img/logo 5.png" height="200px" width="200px">
-            <div class="down_down">
-                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
-            </div>
-            <div class="slogan_roda">
-                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
-            </div>
-        </div>
-</div>
-
-</body>
+            <div class="auxiliar">
+                <div class="fundo_rodapé roda">
+                    <img src="img/logo 5.png" height="200px" width="200px">
+                    <div class="down_down">
+                        <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+                    </div>
+                    <div class="slogan_roda">
+                        <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+                    </div>
+                </div>
+    </body>
 </html>
