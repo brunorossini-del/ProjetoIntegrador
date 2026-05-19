@@ -19,10 +19,10 @@
         }
 
         .menu {
-      background-image: url(img/banner\ 9.png);
-      width: 100%;
-      height: 200px;
-    }
+            background-image: url(img/banner\ 9.png);
+            width: 100%;
+            height: 200px;
+        }
 
         .titulo {
             text-align: center;
@@ -60,16 +60,16 @@
 
         .float {
             float: left;
+
         }
 
         .botao-imagem {
             display: flex;
-            align-items: center; /* Centraliza a imagem e o texto verticalmente */
-
-            gap: 10px; /*é usada para definir o espaçamento entre linhas e colunas dentro de um mesmo contêiner*/
-
-            padding: 10px 15px;/* Espaço entre a imagem e o texto */
-
+            align-items: center;
+            /* Centraliza a imagem e o texto verticalmente */
+            gap: 10px;
+            /* Espaço entre a imagem e o texto */
+            padding: 10px 15px;
             background-color: #02920e;
             color: white;
             border: none;
@@ -77,8 +77,6 @@
             cursor: pointer;
             position: relative;
             bottom: 15px;
-            
-            z-index: 10; /* "Puxa" o elemento para frente, mais próximo do usuário*/
         }
 
         .botao-imagem:hover {
@@ -86,7 +84,7 @@
             height: 48px;
             background-color: #019a0e;
             font-size: 14px;
-            transform: translateX(5px); /*move um elemento horizontalmente 5 pixels para a direita (nesse caso). (Mudar eixo X para demosntrar na apresentação)*/ 
+            transform: translateX(5px);
         }
 
         /* Controla o tamanho da imagem */
@@ -121,29 +119,29 @@
 
             box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.20);
 
-            transition: 0.3s; /*Cria uma mudança suave na alteração do elemento*/
-
-            z-index: 10; /*é uma propriedade do CSS que controla a ordem de empilhamento dos elementos. Ele funciona como a "profundidade" da página*/
+            transition: 0.3s;
         }
 
         .btn-lateral:hover {
+
             background-color: rgb(110, 52, 1);
             color: white;
+
             transform: translateX(8px);
         }
 
         .botoes-lateral {
-    position: absolute; /*Ele permite colocar elementos em locais exatos sem alterar o espaço dos demais.*/
-    top: 370px;
-    left: 175px;
-}
+            position: relative;
+            bottom: 470px;
+            left: 175px;
+        }
 
         .rodapé {
             width: 20%;
             height: 600px;
             background-size: 100%;
             background-repeat: no-repeat;
-            box-sizing: border-box; /*é uma regra que diz ao navegador para incluir o preenchimento (padding) e as bordas (border) dentro da largura e altura totais que você definiu para um elemento*/
+            box-sizing: border-box;
         }
 
         .rodapéA {
@@ -175,7 +173,6 @@
             position: relative;
             top: 200px;
         }
-
     </style>
 </head>
 
@@ -207,7 +204,8 @@
         <div class="quadro">
             <div class="float_map"><iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.3961728646585!2d-49.88559496491714!3d-22.96551739538317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c019ae29210acd%3A0x3a46081938638474!2sR.%20Henrique%20Pontara%2C%20379%20-%20Jardim%20Santa%20Fe%2C%20Ourinhos%20-%20SP%2C%2019910-010!5e0!3m2!1spt-BR!2sbr!4v1773150067567!5m2!1spt-BR!2sbr"
-                    width="450" height="375" style="border:0;" loading="lazy"></iframe>
+                    width="450" height="375" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="float">
                 <span class="p_quadro">
