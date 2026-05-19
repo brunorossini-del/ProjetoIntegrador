@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
-
+        /*importamos a fonte do Google*/
         body {
             background-image: url(img/fundo\ 3.png);
             /* imagem de fundo*/
@@ -17,44 +17,66 @@
             background-size: cover;
             /* Ajusta a imagem para cobrir toda a área */
             opacity: 0, 5;
+            /*opacidade da imagem de fundo*/
         }
 
         .slogan {
             float: left;
+            /*flutuamos o slogan para esquerda*/
             font-family: "Poller One", sans-serif;
+            /*fonte usada no slogan*/
             text-align: center;
+            /*centralizando o slogan*/
             font-size: 40px;
             color: rgba(224, 224, 216);
+            /*cor da fonte do slogan*/
             padding-left: 100px;
+            /*preenche um espaço interno a esquerda do slogan*/
             padding-top: 20px;
+            /*preenche um espaço interno superior do slogan*/
         }
 
         .clear {
             clear: both;
+            /*para fechar o float*/
         }
     </style>
 </head>
 
 <body>
-    <div class="cabe">
+    <div class="cabe"> /*div para o cabeçalho*/
         <div class="logo">
-            <img src="img/logo 5.png" width="200px">
+             /*div para a logo*/
+            <img src="img/logo 5.png" width="200px">  
+            /*logo e seu tamanho*/
         </div>
-        <div>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
-                    <li><a href="Produtos.html">PRODUTOS</a></li>
-                    <li><a href="Eventos.html">EVENTOS</a></li>
+        <div> 
+        /*div para a lista*/
+            <ul> 
+            /*lista não ordenada*/
+                    <li><a href="index.html">HOME</a></li> 
+                    /*elemento da lista e do cabeçalho*/
+                    <li><a href="SobreNós.html">SOBRE NÓS</a></li> 
+                    /*elemento da lista e do cabeçalho*/
+                    <li><a href="Produtos.html">PRODUTOS</a></li> 
+                    /*elemento da lista e do cabeçalho*/
+                    <li><a href="Eventos.html">EVENTOS</a></li> 
+                    /*elemento da lista e do cabeçalho*/
                     <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
-                    <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
-                    <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                     /*elemento da lista e do cabeçalho*/
+                    <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li> 
+                    /*elemento da lista e do cabeçalho*/
+                    <li><a href="Sig a gente.html">SIGA A GENTE</a></li> 
+                    /*elemento da lista e do cabeçalho*/
             </ul>
         </div>
     </div>
     <div class="clear"></div>
+    /*fechou o float*/
     <div class="slogan">
-        <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+        /*div para o o slogan*/
+        <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p> 
+        /*slogan*/
     </div>
 </body>
 
