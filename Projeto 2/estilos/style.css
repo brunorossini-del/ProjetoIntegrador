@@ -1,0 +1,87 @@
+.logo {
+    position: relative;
+    left: 60px;
+    float: left;
+    text-indent: 20px;
+    /*pixels de distância do elemento para a borda*/
+    width: 20%;
+}
+
+.cabe ul {
+    position: relative;
+    top: 20px;
+    /*código para a lista*/
+    float: left;
+    width: 75%;
+    margin: 50px 0px 0px 20px;
+    text-align: left;
+
+}
+
+.cabe ul li {
+    /*codigo para cada linha da lista*/
+    text-decoration: none;
+    display: inline;
+    /*elementos na mesma linha*/
+    padding: 5px;
+    color: rgba(224, 224, 216);
+    font-family: 'Finger Paint', cursive;
+    font-size: 1.2em;
+    cursor: pointer;
+    /*elemento interagível ou clicável*/
+    padding-left: 20px;
+}
+
+.cabe ul li:hover {
+    /*cor que as letras será enviada*/
+    color: rgb(185, 87, 1);
+    font-size: 1.3em;
+}
+
+.cabe a {
+    text-decoration: none;
+    color: rgba(224, 224, 216);
+}
+
+.cabe a:hover {
+    color: rgb(185, 87, 1);
+    font-size: 1.0em;
+}
+
+
+
+
+.fundo_rodapé {
+    /*fundo do rodapé, cor, tamanho e informações básica*/
+    background-color: rgb(110, 52, 1);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.rodapé {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.roda .down_down {
+    text-align: center;
+    width: 50%;
+    margin-top: 40px;
+
+}
+
+.roda .down_down img {
+    width: 40px;
+    border-radius: 25px;
+    border: 4px rgb(255, 255, 255) dotted;
+    cursor: pointer;
+    margin: 20px;
+    padding: 5px;
+}

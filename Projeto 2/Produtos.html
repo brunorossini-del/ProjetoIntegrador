@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* fundo da página */
+            background-color: rgb(222, 222, 222);
+        }
+
+        .menu {
+            /* menu principal */
+            background-image: url(img/banner\ 9.png);
+            width: 100%;
+            height: 200px;
+        }
+
+        .titulo {
+            /* titulo principal */
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            padding: 15px;
+            color: rgb(110, 52, 1);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+
+        .fundo {
+            /* fundo do menu de sorvetes*/
+            background-image: url("img/banner\ produtos.png");
+            width: 100%;
+            height: 300px;
+            /* Ajustado para bater com a altura da imagem interna */
+            background-position: right;
+            background-size: 75% 100%;
+            /* Ocupa 50% da largura e 100% da altura */
+            background-repeat: no-repeat;
+
+        }
+
+        .meio {
+            width: 25%;
+            height: 300px;
+            overflow: hidden;
+
+        }
+
+        .meio img {
+            /* imagem principal do menu de sorvetes*/
+            width: 100vw;
+            height: 300px;
+        }
+
+        .meio:hover {
+            /*informações que muda o tamanho da imagem*/
+            width: 100%;
+            transition: width 3s;
+        }
+
+        .conteiner_img {
+            width: 80%;
+            margin: auto;
+            background-color: rgb(110, 52, 1);
+            padding: 15px;
+            border-radius: 20px;
+
+        }
+
+        /*----------------------------------------------------------------------------------------------------------*/
+
+        .rodapé {
+            /* rodapé informações */
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        .rodapéA {
+            background-image: url(img/logo\ 5.png);
+        }
+
+        .rodapéB {
+            background-image: url(img/15.jpg);
+        }
+
+        .br {
+            background-color: rgb(222, 222, 222);
+        }
+
+        .slogan_roda {
+            margin-right: 50px;
+            width: 200px;
+            font-family: "Poller One", sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(224, 224, 216);
+            line-height: 40px;
+            padding-top: 20px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu"> <!--menu princiapal, cabe, logo, links-->
+        <div class="cabe">
+            <div class="logo">
+                <img src="img/logo 5.png" width="200px"> <!--logo Me gusta-->
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                    <li><a href="Produtos.html">PRODUTOS</a></li>
+                    <li><a href="Eventos.html">EVENTOS</a></li>
+                    <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
+                    <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="titulo">
+            <h1>Produtos</h1> <!--titulo principal-->
+        </div>
+
+        <div class="conteiner_img">
+            <div class="fundo"><!--banner que move q leva para página de produtos exóticos -->
+                <div class="meio">
+                    <a href="ProdutosExóticos.html"><img src="img/banner movel.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="br">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="fundo_rodapé roda"><!--rodapé, link, tamanho-->
+            <img src="img/logo 5.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
+        </div>
+
+</body>
+
+</html>

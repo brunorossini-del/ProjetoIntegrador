@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(222, 222, 222);
+        }
+
+        .menu {
+            background-image: url(img/banner\ 9.png);
+            width: 100%;
+            height: 200px;
+        }
+
+        .titulo {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            padding: 15px;
+            color: rgb(110, 52, 1);
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .quadro {
+            font-family: "Oswald", sans-serif;
+            background-color: white;
+            width: 875px;
+            height: 415px;
+            border-radius: 10px;
+            position: relative;
+            left: 450px;
+            padding: 30px;
+            box-shadow: 5px 5px 5px 5px rgb(181, 180, 180);
+        }
+
+        .p_quadro {
+            font-size: 19px;
+        }
+
+        .float_map {
+            float: right;
+            position: relative;
+            top: 10px;
+        }
+
+        .float {
+            float: left;
+
+        }
+
+        .botao-imagem {
+            display: flex;
+
+            align-items: center;
+            /* Centraliza a imagem e o texto verticalmente */
+
+            gap: 10px;
+            /* Espaço entre a imagem e o texto */
+            
+            padding: 10px 15px;
+            background-color: #02920e;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            position: relative;
+            bottom: 15px;
+            z-index: 10;
+        }
+
+        .botao-imagem:hover {
+            width: 180px;
+            height: 48px;
+            background-color: #019a0e;
+            font-size: 14px;
+            transform: translateX(5px);
+        }
+
+        /* Controla o tamanho da imagem */
+        .botao-imagem img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .botoes-lado {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+
+
+        .btn-lateral {
+
+            width: 225px;
+            height: 140px;
+
+            background-color: white;
+
+            border: none;
+            border-radius: 18px;
+
+            font-family: "Oswald", sans-serif;
+            font-size: 24px;
+            color: rgb(110, 52, 1);
+
+            cursor: pointer;
+
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.20);
+
+            transition: 0.3s;
+            z-index: 10;
+        }
+
+        .btn-lateral:hover {
+
+            background-color: rgb(110, 52, 1);
+            color: white;
+
+            transform: translateX(8px);
+            z-index: 10;
+        }
+
+        .botoes-lateral {
+            position: relative;
+            bottom: 470px;
+            left: 175px;
+        }
+
+        .rodapé {
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+
+        .rodapéA {
+            background-image: url(img/logo\ 5.png);
+        }
+
+        .rodapéB {
+            background-image: url(img/15.jpg);
+        }
+
+        .br {
+            background-color: white;
+        }
+
+        .slogan_roda {
+            margin-right: 50px;
+            width: 200px;
+            font-family: "Poller One", sans-serif;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(224, 224, 216);
+            line-height: 40px;
+            padding-top: 20px;
+
+
+        }
+
+        .auxiliar {
+            position: relative;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="cabe">
+            <div class="logo">
+                <img src="img/logo 5.png" width="200px">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                    <li><a href="Produtos.html">PRODUTOS</a></li>
+                    <li><a href="Eventos.html">EVENTOS</a></li>
+                    <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
+                    <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="titulo">
+            <h1>Nos Encontre!</h1>
+        </div>
+        <br>
+        <br>
+        <div class="quadro">
+            <div class="float_map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.3961728646585!2d-49.88559496491714!3d-22.96551739538317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c019ae29210acd%3A0x3a46081938638474!2sR.%20Henrique%20Pontara%2C%20379%20-%20Jardim%20Santa%20Fe%2C%20Ourinhos%20-%20SP%2C%2019910-010!5e0!3m2!1spt-BR!2sbr!4v1773150067567!5m2!1spt-BR!2sbr"
+                    width="450" height="375" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="float">
+                <span class="p_quadro">
+                    📍 Henrique Pontara, 379 - Jardim Santa Fe Ourinhos - SP<br>
+                    <br>
+                    <hr>
+                    <br>
+                    <strong>Funcionamento: </strong> <br>
+                    Segunda - Terça - Quarta - Quinta - Sexta<br>
+                    <strong>12h - 22h</strong><br>
+                    Sábado - Domingo<br>
+                    <strong>14h - 00h</strong><br>
+                    <br>
+                    <hr>
+                    <br>
+                    <strong>Telefone: </strong><br>
+                    (+55) 14 99604 - 9756
+                </span>
+            </div>
+            <div class="clear"></div>
+            <button class="botao-imagem">
+                <img src="img/whats_logo_01.png" alt="Ícone">
+                Fale com a gente
+            </button>
+        </div>
+        <div class="botoes-lateral">
+            <div class="botoes-lado">
+
+                <button class="btn-lateral">
+                    Santa Cruz <br>do Rio Pardo
+                </button>
+
+                <button class="btn-lateral">
+                    Ourinhos
+                </button>
+
+                <button class="btn-lateral">
+                    São Paulo
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="auxiliar">
+        <div class="fundo_rodapé roda">
+            <img src="img/logo 5.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
