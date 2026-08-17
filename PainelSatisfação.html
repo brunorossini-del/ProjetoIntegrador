@@ -7,7 +7,8 @@
   <title>Painel de Satisfação</title>
   <link rel="stylesheet" href="estilos/style.css">
   <style>
-     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
+
     * {
       margin: 0;
       padding: 0;
@@ -19,7 +20,7 @@
     }
 
     .menu {
-      background-image: url(img/banner\ 9.png);
+      background-image: url(img/Banner\ MENU.png);
       width: 100%;
       height: 200px;
     }
@@ -82,12 +83,14 @@
       transition: 0.5s;
     }
 
-    .rating input:checked+label { /*o input fica marcado (checked); o label logo depois recebe: fundo marrom e texto branco; o "+" significa o próximo elemento imediatamente depois*/
+    .rating input:checked+label {
+      /*o input fica marcado (checked); o label logo depois recebe: fundo marrom e texto branco; o "+" significa o próximo elemento imediatamente depois*/
       background: #6b3e26;
       color: #fff;
     }
 
-    .rating label:hover {  /*Quando passar o mouse, fica com essa cor*/
+    .rating label:hover {
+      /*Quando passar o mouse, fica com essa cor*/
       background: #cca68a;
     }
 
@@ -97,7 +100,8 @@
       border-radius: 10px;
       border: 2px solid #ccc;
       padding: 15px;
-      resize: none; /* é uma propriedade do CSS que impede o usuário de alterar o tamanho de um elemento na tela*/
+      resize: none;
+      /* é uma propriedade do CSS que impede o usuário de alterar o tamanho de um elemento na tela*/
       margin-bottom: 20px;
       font-family: "Oswald", sans-serif;
     }
@@ -153,7 +157,6 @@
       position: relative;
       top: 200px;
     }
-    
   </style>
 </head>
 
@@ -181,49 +184,49 @@
   </div>
 
 
-    <div class="container">
-      <h1 class="titulo">Painel de Satisfação</h1>
-      <p class="subtitle">Como foi sua experiência?</p>
+  <div class="container">
+    <h1 class="titulo">Painel de Satisfação</h1>
+    <p class="subtitle">Como foi sua experiência?</p>
 
-      <div class="rating">
-        <!--input type radio; Cria um botão de escolha*/-->
+    <div class="rating">
+      <!--input type radio; Cria um botão de escolha*/-->
 
-        <!--name nota; Faz todos os botões pertencerem ao mesmo grupo, permitindo selecionar apenas UM.*/-->
+      <!--name nota; Faz todos os botões pertencerem ao mesmo grupo, permitindo selecionar apenas UM.*/-->
 
-        <!--id n0; Dá um identificador único ao botão.*/-->
+      <!--id n0; Dá um identificador único ao botão.*/-->
 
-        <!--<label for="n0">0</label>; Cria o número visível. Quando o usuário clica no número, o botão correspondente é marcado..*/-->
-        
-        <input type="radio" id="n0" name="nota"><label for="n0">0</label>
-        <input type="radio" id="n1" name="nota"><label for="n1">1</label>
-        <input type="radio" id="n2" name="nota"><label for="n2">2</label>
-        <input type="radio" id="n3" name="nota"><label for="n3">3</label>
-        <input type="radio" id="n4" name="nota"><label for="n4">4</label>
-        <input type="radio" id="n5" name="nota"><label for="n5">5</label>
-        <input type="radio" id="n6" name="nota"><label for="n6">6</label>
-        <input type="radio" id="n7" name="nota"><label for="n7">7</label>
-        <input type="radio" id="n8" name="nota"><label for="n8">8</label>
-        <input type="radio" id="n9" name="nota"><label for="n9">9</label>
-        <input type="radio" id="n10" name="nota"><label for="n10">10</label>
-      </div>
+      <!--<label for="n0">0</label>; Cria o número visível. Quando o usuário clica no número, o botão correspondente é marcado..*/-->
 
-      <textarea placeholder="Deixe seu comentário..."></textarea>
-
-      <button>Enviar avaliação</button>
+      <input type="radio" id="n0" name="nota"><label for="n0">0</label>
+      <input type="radio" id="n1" name="nota"><label for="n1">1</label>
+      <input type="radio" id="n2" name="nota"><label for="n2">2</label>
+      <input type="radio" id="n3" name="nota"><label for="n3">3</label>
+      <input type="radio" id="n4" name="nota"><label for="n4">4</label>
+      <input type="radio" id="n5" name="nota"><label for="n5">5</label>
+      <input type="radio" id="n6" name="nota"><label for="n6">6</label>
+      <input type="radio" id="n7" name="nota"><label for="n7">7</label>
+      <input type="radio" id="n8" name="nota"><label for="n8">8</label>
+      <input type="radio" id="n9" name="nota"><label for="n9">9</label>
+      <input type="radio" id="n10" name="nota"><label for="n10">10</label>
     </div>
-    <div class="auxiliar">
-      <div class="fundo_rodapé roda">
-        <img src="img/LogoMeGusta.png" height="200px" width="200px">
-        <div class="down_down">
-          <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/face_logo_01.png"></a>
-          <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/whats_logo_01.png"></a>
-          <a href="https://www.instagram.com/" target="_blank"><img src="Img/inst_logo_01.png"></a>
-        </div>
-        <div class="slogan_roda">
-          <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
-        </div>
+
+    <textarea placeholder="Deixe seu comentário..."></textarea>
+
+    <button>Enviar avaliação</button>
+  </div>
+  <div class="auxiliar">
+    <div class="fundo_rodapé roda">
+      <img src="img/LogoMeGusta.png" height="200px" width="200px">
+      <div class="down_down">
+        <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
       </div>
-    
+      <div class="slogan_roda">
+        <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+      </div>
+    </div>
+
 
 </body>
 
