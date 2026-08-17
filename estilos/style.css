@@ -90,3 +90,44 @@
     margin: 20px;
     padding: 5px;
 }
+ /* CAMPOS */
+
+        .campo_m {
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 20px;
+        }
+
+        .campo_m label {
+
+            margin-bottom: 8px;
+
+            color: #334155;
+
+            font-size: 18px;
+        }
+
+        /* INPUTS */
+
+        .campo_m input {
+
+            padding: 14px;
+
+            border: 2px solid #cbd5e1;
+
+            border-radius: 12px;
+
+            outline: none;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+        .campo_ input:focus {
+
+            border-color: #2563eb;
+            border-color: #eb2525;
+            box-shadow: 0px 0px 10px rgba(37, 99, 235, 0.3);
+        }
