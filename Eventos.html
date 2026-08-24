@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One:ital@0;1&family=Geostar+Fill&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Playwrite+NZ+Guides&family=Poller+One&family=Supermercado+One&display=swap');
 
@@ -33,166 +32,12 @@
             /*altura do banner em 200px*/
         }
 
-        .titulo {
-            text-align: center;
-            /*centralizando o título*/
-            font-family: "Poller One", sans-serif;
-            /*fonte do título*/
-            font-size: 30px;
-            /*definindo o tamanho da fonte*/
-            padding: 30px;
-            /*espaçamento interno do título*/
-            color: rgb(110, 52, 1);
-            /*cor do título*/
-        }
-
         .clear {
             clear: both;
             /*fechar o float*/
         }
 
         /*----------------------------------------------------------------------------------------------------------*/
-
-        .fundo_banner {
-            display: flex;
-            /*cria um contêiner flexível que permite alinhar, redimensionar e distribuir elementos*/
-            flex-direction: row;
-
-            /*organiza os elementos filhos lado a lado, da esquerda para a direita*/
-            flex-wrap: wrap;
-            /*para os elementos filhos quebrem para próxima linha quado não houver espaço horizontal suficiente dentro do container pai*/
-
-            flex-wrap: wrap;
-            /*devem ficar obrigatoriamente em uma única linha*/
-            justify-content: space-around;
-            /*espaçamentos iguais em cada item*/
-            text-align: center;
-            /*centralizando o banner ao centro*/
-        }
-
-        .item_banner {
-            width: 120px;
-            /*tamanho horizontal do banner*/
-            height: 500px;
-            /*altura do banner*/
-            background-size: 100%;
-            /*define que a imagem ocupe 100% da largura*/
-            background-repeat: no-repeat;
-            /*para não repetir o banner*/
-        }
-
-        .BannerA {
-            width: 250px;
-            /*tamanho horizontal do banner A*/
-            height: 500px;
-            /*altura do banner A*/
-        }
-
-        .BannerB {
-            width: 250px;
-            /*tamanho horizontal do banner B*/
-            height: 500px;
-            /*altura do banner B*/
-        }
-
-        .BannerC {
-            width: 250px;
-            /*tamanho horizontal do banner C*/
-            height: 500px;
-            /*altura do banner C*/
-        }
-
-        /*----------------------------------------------------------------------------------------------------------*/
-
-        .fundo_titulo {
-            display: flex;
-            /*cria um contêiner flexível que permite alinhar, redimensionar e distribuir elementos*/
-            flex-direction: row;
-            /*organiza os elementos filhos lado a lado, da esquerda para a direita*/
-            flex-wrap: wrap;
-            /*para os elementos filhos quebrem para próxima linha quado não houver espaço horizontal suficiente dentro do container pai*/
-            justify-content: space-around;
-            /*espaçamentos iguais em cada item*/
-            text-align: center;
-            /*centralizando o banner ao centro*/
-        }
-
-        .item_titulo {
-            width: 200px;
-            /*tamanho horizontal do título*/
-            height: 120px;
-            /*tamanho vertical do título*/
-            background-repeat: no-repeat;
-            /*para não repetir o título*/
-        }
-
-        .TituloA {
-            font-family: "Playfair Display", serif;
-        }
-
-        /*fonte utilizada no título A*/
-        .TituloB {
-            font-family: "Playfair Display", serif;
-        }
-
-        /*fonte utilizada no título B*/
-        .TituloC {
-            font-family: "Playfair Display", serif;
-        }
-
-        /*fonte utilizada no título C*/
-        /*----------------------------------------------------------------------------------------------------------*/
-
-        .fundo_texto {
-            display: flex;
-            /*cria um contêiner flexível que permite alinhar, redimensionar e distribuir elementos*/
-            flex-direction: row;
-            /*organiza os elementos filhos lado a lado, da esquerda para a direita*/
-            flex-wrap: wrap;
-            /*para os elementos filhos quebrem para próxima linha quado não houver espaço horizontal suficiente dentro do container pai*/
-            justify-content: space-around;
-            /*espaçamentos iguais em cada item*/
-            text-align: center;
-            /*centralizando o banner ao centro*/
-        }
-
-        .item_texto {
-            /*espaçamento interno do texto*/
-            width: 200px;
-            /*tamanho horizontal do texto*/
-            height: 50px;
-            /*tamanho vertical do texto*/
-            background-repeat: no-repeat;
-            /*para não repetir o texto*/
-        }
-
-        .TextoA {
-            font-family: "Oswald", sans-serif;
-            /*fonte do texto A*/
-            font-size: 20px;
-            /*tamanho do texto A*/
-            line-height: 2em;
-            /*altura da linha do texto*/
-        }
-
-        .TextoB {
-            font-family: "Oswald", sans-serif;
-            /*fonte do texto B*/
-            font-size: 20px;
-            /*tamanho do texto B*/
-            line-height: 2em;
-            /*altura da linha do texto*/
-        }
-
-        .TextoC {
-            font-family: "Oswald", sans-serif;
-            /*fonte do texto C*/
-            font-size: 20px;
-            /*tamanho do texto C*/
-            line-height: 2em;
-            /*altura da linha do texto*/
-        }
-
         /*----------------------------------------------------------------------------------------------------------*/
 
         .botao {
@@ -318,15 +163,95 @@
 
             transform: scale(1.02);
         }
-        input {
-  text-transform: uppercase;
-}
-    </style>
 
+        input {
+            text-transform: uppercase;
+        }
+
+        .conteudo {
+            /*conteudo principal da página*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .item {
+            /*configuração de itens*/
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+
+        }
+
+        .itemA {
+            /*informação item A*/
+            background-image: url(img/BannerNaMosca.png);
+            bottom: 0px;
+            height: 300px;
+            width: 600px;
+
+        }
+
+        .itemB {
+            /*informação item B*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .itemC {
+            /*informação item C*/
+            background-image: url(img/BannerSextaDasCriancas.png);
+            bottom: 0px;
+            height: 300px;
+            width: 600px;
+
+        }
+
+        .itemD {
+            /*informação item D*/
+            background-image: url(img/BannerFoto.png);
+            bottom: 0px;
+            height: 300px;
+            width: 600px;
+
+        }
+
+        .itemE {
+            /*informação item E*/
+           font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .itemF {
+            /*informação item F*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .banner {
+            /*fundo degrade*/
+            border-radius: 10px;
+            height: 200px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 
 <body>
-    <div class="menu">
+     <div class="menu">
         <!--banner ao fundo do cabeçalho-->
         <div class="cabe">
             <!--cabeçalho-->
@@ -359,76 +284,85 @@
         <div class="clear"></div>
         <!--fechar o float-->
     </div>
-
-    <!------------------------------------------------------------------------------------------>
-
-    <!------------------------------------------------------------------------------------------>
-
-    <div class="clear"></div>
-    <!--fechou o float-->
-    <div class="fundo_banner">
-        <!--características atribuida aos banners-->
-        <div class="item_banner BannerA">
-            <!--características do banner A-->
-            <img src="img/banner movel (produtos).png">
-            <!--banner A-->
-        </div>
-
-    <!------------------------------------------------------------------------------------------>
-
-    <div class="fundo_texto">
-        <!--características dos textos-->
-        <div class="item_texto TextoA">
-            <!--características do texto A-->
-            <P>Poste uma foto com o gelato, apenas do gelato ou do ambiente no instagram e
-                marque a gelateria para ganhar desconto no seu gelato</P>
-            <!--texto A-->
-        </div>
     </div>
-    <button class="botao" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se</button>
-
-    <!--característicasdo botão "Cadastre-se"-->
-    <div class="br">
-        <!--características do quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-        <br><!--quebra linha-->
-
-        <div class="br">
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-
-        <div class="auxiliar">
-            <div class="fundo_rodapé roda">
-                <img src="img/LogoMeGusta.png" height="200px" width="200px">
-                <div class="down_down">
-                    <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
-                    <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
-                </div>
-                <div class="slogan_roda">
-                    <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+        <br>
+        <br>
+        <br>
+        <div class="banner"> <!--texto de informação -->
+            <div class="conteudo">
+                <div class="item itemA"></div>
+                <div class="item itemB">
+                    <p>
+                        Poste uma foto com o gelato, apenas do gelato ou do ambiente no instagram e marque a gelateria para ganhar desconto no seu gelato. 
+                    </p>
                 </div>
             </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
 
+        <div class="banner"> <!--Gelato dois, informações, link e imagens-->
+            <div class="conteudo">
+                <div class="item itemE">
+                    <p>
+                        As sextas-feiras, Me Gusta fica com um palhaço ou mágico dentro do estabelecimento alegrando as famílias e crianças.
+                    </p>
+                </div>
+                <div class="item itemC"></div>
 
-            <!-- Modal -->
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+        <div class="banner"> <!--Gelato três, informações, link e imagens-->
+            <div class="conteudo">
+                <div class="item itemD"></div>
+                <div class="item itemF">
+                    <p>
+                        Aos domingos, o atendente da Me Gusta escolherá um peso específico e os clientes que pegarem o gelato e acertarem o peso escolhido pelo atendente ganhará o gelato que pegou pelo maior mérito do cliente. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+            <button class="botao" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se</button>
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -445,7 +379,7 @@
 
                                 <div class="registro">
                                     <form>
-                            
+
                                         <!-- NOME -->
                                         <div class="campo_m">
                                             <label>Nome Completo</label>
@@ -467,17 +401,17 @@
                                         <!-- ENDEREÇO -->
                                         <div class="campo_m">
                                             <label>Endereço</label>
-                                            <input  required type="text" placeholder="Rua, número e bairro">
+                                            <input required type="text" placeholder="Rua, número e bairro">
                                         </div>
 
                                         <!-- TELEFONE -->
                                         <div class="campo_m">
                                             <label>Telefone</label>
-                                            <input  required type="text" placeholder="(00) 00000-0000">
+                                            <input required type="text" placeholder="(00) 00000-0000">
                                         </div>
 
                                         <!-- BOTÃO -->
-                                        <button type="submit" >Cadastrar</button>
+                                        <button type="submit">Cadastrar</button>
 
                                     </form>
 
@@ -489,14 +423,46 @@
                     </div>
                 </div>
             </div>
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
                 crossorigin="anonymous"></script>
-                <script>
-    
- 
-                </script>
+            <script>
+
+
+            </script>
+
+            <div class="auxiliar">
+        <div class="fundo_rodapé roda">
+            <img src="img/LogoMeGusta.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
+        </div>
+
 </body>
 
 </html>
