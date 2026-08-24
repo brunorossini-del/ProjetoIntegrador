@@ -196,7 +196,6 @@
                 min-height: 200px;
                 text-align: center;
                 padding: 20px 0;
-                align-items: center;
             }
 
             .fundo_rodapé>img {
@@ -220,24 +219,33 @@
 </head>
 
 <body>
-    <div class="menu"> <!--menu princiapal, cabe, logo, links-->
+<div class="menu">
+        <!--banner ao fundo do cabeçalho-->
         <div class="cabe">
+            <!--cabeçalho-->
             <div class="logo">
-                <img src="img/LogoMeGusta.png" width="180px" class="img-fluid"> <!--logo Me gusta-->
+                <!--div para a logo-->
+                <img src="img/LogoMeGusta.png" width="200px">
+                <!--logo-->
             </div>
-            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Abrir menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse menu-links" id="menuMobile">
+            <div>
+                <!--div para a lista-->
                 <ul>
+                    <!--lista não ordenada-->
                     <li><a href="index.html">HOME</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="SobreNós.html">SOBRE NÓS</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Produtos.html">PRODUTOS</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Eventos.html">EVENTOS</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Localização.html">LOCALIZAÇÃO</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                     <li><a href="Sig a gente.html">SIGA A GENTE</a></li>
+                    <!--elemento da lista e do cabeçalho-->
                 </ul>
             </div>
         </div>
@@ -411,17 +419,19 @@
     <br>
     <br>
 
-    <div class="fundo_rodapé roda"><!--rodapé, link, tamanho-->
-        <img src="img/LogoMeGusta.png" height="200px" width="200px">
-        <div class="down_down">
-            <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
+    <div class="auxiliar">
+        <div class="fundo_rodapé roda">
+            <img src="img/LogoMeGusta.png" height="200px" width="200px">
+            <div class="down_down">
+                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
+            </div>
+            <div class="slogan_roda">
+                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+            </div>
         </div>
-        <div class="slogan_roda">
-            <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
-        </div>
-    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
