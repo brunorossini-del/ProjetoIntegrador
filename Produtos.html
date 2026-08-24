@@ -42,47 +42,6 @@
         }
 
 
-        .fundo {
-            /* fundo do menu de sorvetes*/
-            background-image: url("img/banner\ de\ produtos\ \(PRODUTOS\).png");
-            width: 100%;
-            height: 300px;
-            /* Ajustado para bater com a altura da imagem interna */
-            background-position: right;
-            background-size: 75% 100%;
-            /* Ocupa 50% da largura e 100% da altura */
-            background-repeat: no-repeat;
-
-        }
-
-        .meio {
-            width: 25%;
-            height: 300px;
-            overflow: hidden;
-
-        }
-
-        .meio img {
-            /* imagem principal do menu de sorvetes*/
-            width: 100vw;
-            height: 300px;
-        }
-
-        .meio:hover {
-            /*informações que muda o tamanho da imagem*/
-            width: 100%;
-            transition: width 3s;
-        }
-
-        .conteiner_img {
-            width: 80%;
-            margin: auto;
-            background-color: rgb(110, 52, 1);
-            padding: 15px;
-            border-radius: 20px;
-
-        }
-
         /*----------------------------------------------------------------------------------------------------------*/
 
         .rodapé {
@@ -118,164 +77,119 @@
 
 
         }
+
         .linha {
-      width: 70%;
-      height: 5px;
-      background-color: rgb(110, 52, 1);
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-
-        /* ==============================================================
-           AJUSTES DE RESPONSIVIDADE
-           O layout de desktop continua 100% controlado pelo seu arquivo
-           estilos/style.css (.logo, .cabe, .cabe ul, .cabe ul li,
-           .fundo_rodapé, .roda .down_down...). Aqui só entram regras
-           NOVAS (botão hambúrguer) e ajustes que só valem no mobile.
-           ============================================================== */
-
-        /* Evita que a imagem 100vw do .meio cause rolagem horizontal */
-        .meio img {
-            max-width: 100%;
-        }
-
-        /* Botão hambúrguer (estilo da imagem 1) — classe nova, não existe
-           conflito com o CSS externo */
-        .navbar-toggler {
-            display: none;
-            border: 1px solid rgba(255, 255, 255, 0.85);
+            width: 70%;
+            height: 5px;
+            background-color: rgb(110, 52, 1);
+            margin: 20px auto;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.15);
-            padding: 10px 16px;
         }
 
-        .navbar-toggler:focus {
-            box-shadow: none;
+        .bannerPrdotuos {
+            height: 600px;
+            width: 1330px;
         }
 
-        .navbar-toggler-icon {
-            background-image: none;
-            width: 24px;
-            height: 2px;
-            background-color: #fff;
-            display: block;
-            position: relative;
+        .centro {
+            text-align: center;
         }
 
-        .navbar-toggler-icon::before,
-        .navbar-toggler-icon::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 24px;
-            height: 2px;
-            background-color: #fff;
+        .texto_produtosExto {
+            font-family: "Poller One", sans-serif;
+            /*fonte usada no slogan*/
+            text-align: center;
+            /*centralizando o slogan*/
+            font-size: 35px;
+            color: rgb(111, 52, 0);
+            /*cor da fonte do slogan*/
+            /*preenche um espaço interno a esquerda do slogan*/
+            padding-top: 30px;
+            /*preenche um espaço interno superior do slogan*/
         }
 
-        .navbar-toggler-icon::before {
-            top: -7px;
+        .item {
+            /*configuração de itens*/
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+
         }
 
-        .navbar-toggler-icon::after {
-            top: 7px;
+        .itemA {
+            /*informação item A*/
+            background-image: url(img/SorveteCafeBranco.jpg);
+            bottom: 0px;
+            height: 350px;
+            width: 600px;
+            border-radius: 10px;
+
         }
 
-        /* Painel do menu (#menuMobile) some por padrão no mobile;
-           acima de 768px ele é forçado a aparecer, pois quem manda no
-           layout de desktop é o .cabe ul do CSS externo */
-        @media (min-width: 768px) {
-            .menu-links.collapse {
-                display: block !important;
-            }
+        .itemB {
+            /*informação item B*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
         }
 
-        @media (max-width: 767.98px) {
-            .menu {
-                height: auto;
-                min-height: 120px;
-                padding-bottom: 10px;
-                position: relative;
-                background-size: cover;
-                background-position: center;
-            }
+        .itemC {
+            /*informação item C*/
+            background-image: url(img/SorveteMorango.png);
+            bottom: 0px;
+            height: 350px;
+            width: 600px;
+            border-radius: 10px;
 
-            .navbar-toggler {
-                display: block;
-                position: absolute;
-                top: 18px;
-                right: 20px;
-                z-index: 1100;
-            }
+        }
 
-            /* Sobrescreve, só no mobile, o float/left fixo do CSS externo,
-               que deixava a logo grande "vazando" para fora do cabeçalho */
-            .logo {
-                position: static;
-                float: none;
-                left: 0;
-                margin: 0;
-                padding: 0;
-                display: block;
-            }
+        .itemD {
+            /*informação item D*/
+            background-image: url(img/SorveteComMelaoePreseunto.png);
+            bottom: 0px;
+            height: 350px;
+            width: 600px;
+            border-radius: 10px;
 
-            .logo img {
-                width: 130px !important;
-                height: auto !important;
-                margin: 0;
-                padding: 0;
-            }
+        }
 
-            /* Sobrescreve, só no mobile, o posicionamento em float/coluna
-               fixa que o CSS externo usa para telas grandes */
-            .menu-links {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: rgba(120, 120, 120, 0.95);
-                z-index: 1000;
-            }
+        .itemE {
+            /*informação item E*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
 
-            .menu-links ul {
-                float: none;
-                width: 100%;
-                margin: 0;
-                top: 0;
-                text-align: center;
-                padding: 20px 0;
-            }
+        .itemF {
+            /*informação item F*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
 
-            .menu-links ul li {
-                display: block;
-                padding: 14px 0;
-            }
+        .banner {
+            /*fundo degrade*/
+            border-radius: 10px;
+            height: 200px;
+            text-align: center;
+        }
 
-            .menu-links ul li a {
-                color: #fff;
-                font-size: 16px;
-                letter-spacing: 1px;
-            }
-
-            .fundo {
-                height: 220px;
-                background-size: contain;
-                background-position: center;
-            }
-
-            .meio {
-                width: 100%;
-                height: auto;
-            }
-
-            .meio img {
-                width: 100%;
-                height: auto;
-            }
-
-            .carousel-item img {
-                height: 260px !important;
-                object-fit: cover;
-            }
+        .conteudo {
+            /*conteudo principal da página*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
 
             .fundo_rodapé {
                 height: auto;
@@ -285,7 +199,7 @@
                 align-items: center;
             }
 
-            .fundo_rodapé > img {
+            .fundo_rodapé>img {
                 width: 100px;
                 height: 100px;
             }
@@ -301,7 +215,7 @@
                 gap: 10px;
                 flex-wrap: wrap;
             }
-        }
+        
     </style>
 </head>
 
@@ -312,8 +226,7 @@
                 <img src="img/LogoMeGusta.png" width="180px" class="img-fluid"> <!--logo Me gusta-->
             </div>
             <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false"
-                aria-label="Abrir menu">
+                data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse menu-links" id="menuMobile">
@@ -330,7 +243,33 @@
         </div>
         <div class="clear"></div>
     </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="centro">
+        <img class="bannerPrdotuos" src="img/BannerProdutos.jpg">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <hr class="linha">
+
+    <br>
+    <br>
+    <br>
+
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
@@ -338,38 +277,140 @@
             <div class="carousel-item active">
 
                 <!-- w-100 faz a imagem ocupar 100% da largura disponível. -->
-                <img src="img/carrosselProdutos.png" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 1">
+                <img src="img/carrosselProdutos.png" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 1">
 
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos2.png" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 2">
+                <img src="img/carrosselProdutos2.png" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 2">
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos3.jpg" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 3">
+                <img src="img/carrosselProdutos3.jpg" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 3">
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos4.jpg" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 3">
+                <img src="img/carrosselProdutos4.jpg" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 3">
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos5.jpg" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 3">
+                <img src="img/carrosselProdutos5.jpg" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 3">
             </div>
+
+    </div>
+    </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <hr class="linha">
+
+    <br>
+    <br>
+    <br>
+
+    <div class="texto_produtosExto">
+        <p>Conheça nossos sabores favoritos </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="banner"> <!--texto de informação -->
+        <div class="conteudo">
+            <div class="item itemA"></div>
+            <div class="item itemB">
+                <p>
+                    Café Branco: Uma parente do criador da Me Gusta deu uma sugestão de sabor, sendo o café; Elizandro
+                    criou esse sabor de gelato usando suas especiarias e técnicas. Mas, na Me Gusta o céu é o limite,
+                    gostamos de aprimorar e sempre inovar até mesmo nas inovações, então, com muitos estudos Elizandro
+                    conseguiu criar o novo sabor de café, o café branco, com uma qualidade aprimorada do gelato inicial
+                    de café, esse novo sabor conta com pedaços pequenos de café torrado, entregando aroma, sabor e
+                    experiência.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="banner"> <!--Gelato dois, informações, link e imagens-->
+        <div class="conteudo">
+            <div class="item itemE">
+                <p>
+                    Morango sem açúcar: Um sabor tradicional no mundo todo, porém Elizandro decidiu priorizar a
+                    autenticidade, criou uma versão adaptada para pessoas diabéticas ou que simplesmente não consomem
+                    açúcar mas estão com “aquela vontade de comer um docinho”, então foi criado o Fresa sin azúcar
+                    inovando com seu sabor intenso.
+                </p>
+            </div>
+            <div class="item itemC"></div>
 
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-    <hr class="linha">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="banner"> <!--Gelato três, informações, link e imagens-->
+        <div class="conteudo">
+            <div class="item itemD"></div>
+            <div class="item itemF">
+                <p>
+                    Melão com presunto:Um sabor que honra o nosso mantra na exclusividade, um sabor exótico com a
+                    refrescância do melão e a experiência de sentir um sabor exótico, deixando o degustador em dúvida se
+                    é gostoso ou incrível. Sua aparência é apetitosa e encantadora, agradando desde um adulto
+                    especializado em degustar gelatos até uma criança tendo uma nova experiência ao provar esse sabor
+                    inédito.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <div class="fundo_rodapé roda"><!--rodapé, link, tamanho-->
         <img src="img/LogoMeGusta.png" height="200px" width="200px">
         <div class="down_down">
