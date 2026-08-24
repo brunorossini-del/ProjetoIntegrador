@@ -18,8 +18,9 @@
             /*fundo da página*/
             background-color: rgb(222, 222, 222);
         }
-        .titulo{
-             font-family: "Poller One", sans-serif;
+
+        .titulo {
+            font-family: "Poller One", sans-serif;
             /*fonte usada no slogan*/
             text-align: center;
             /*centralizando o slogan*/
@@ -108,8 +109,8 @@
         .item_mantra {
             /*item principal da mantra*/
             padding: 15px;
-            width: 20%;
-            height: 200px;
+            width: 50%;
+            height: 150px;
             background-size: 100%;
             background-repeat: no-repeat;
             box-sizing: border-box;
@@ -168,6 +169,29 @@
 
 
         }
+
+        .mantra1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        .mantra2{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        .mantra3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .hh {
+            font-family: "Poller One", sans-serif;
+            color: rgb(110, 52, 1);
+        }
     </style>
 </head>
 
@@ -191,73 +215,54 @@
         </div>
         <div class="clear"></div>
     </div>
+    <br>
+   
+    <div class="mantra1">
+        <div class="item_mantra MantraA">
+            <h3 class="hh">Exclusividade</h3>
+            <p>Gelatos fabricados para cada indivíduo que degusta, atendendo pessoas com diabetes, colesterol ou padrões
+                de vida que não consomem açúcar e também amantes de gelato que adoram degustar.</p>
+        </div>
+        <img src="img" width="" height="" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="mantra2">
+        <div class="item_mantra MantraB">
+            <h3 class="hh">Família</h3>
+            <p>Devido a história da gelateria, Me Gusta prioriza o valor da família, criando um ambiente confortável
+                para as famílias ficarem a vontade.</p>
+        </div>
+        <img src="img" width="" height="" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="mantra3">
+    <div class="item_mantra MantraC">
+        <h3 class="hh">Sabor</h3>
+        <p>Me gusta não usa bases, adição de açúcar, gordura saturada e muito menos compram sabores prontos, aqui nós
+            fabricamos cada sabor, contendo menos oxigênio no gelato, menos açúcar, glúten, ou seja, com todas as
+            características de um gelato, porém com os acréscimos exclusivos. </p>
+    </div>
+    <img src="img" width="" height="" alt="">
+    </div>
+    <br>
+    <br>
 
-        <div class="slogan"> <!--Titulo Pagina-->
-            <h1>Sobre Nós</h1>
-        </div>
-
-        <div class="conteudo">
-            <div class="item itemA"></div> <!--Div de Banner A-->
-            <div class="item itemB"> <!--Texto Principal da  Página-->
-                <p>Me Gusta, um sonho que surgiu pelas eventualidades que a vida nos dá.
-                    No ano de 2023, Elizandro, Lucineia e Lorena, uma família viaja para o Chile, onde entram em contato
-                    com culturas; costumes e principalmente; culinária, os gelatos chilenos... Ao provar, foi paixão à
-                    primeira colherada, ficaram encantados com o sabor e aparência dos gelatos e então um sonho surgiu.
-                    Chegando no Brasil iniciaram seus estudos intensos que até os dias atuais não se encerraram, foram
-                    se aperfeiçoando conforme estudavam e dando forma a esse sonho. Porém, no final de 2024, com tudo
-                    pronto para abrirem as portas a esposa de Elizandro, Lucineia, começa a adoecer e fica internada no
-                    hospital por 34 dias, e no dia 30 de dezembro de 2024 Lucineia falece e todo esse sonho quase
-                    desmorona, mas Elizandro e Lorena após um longo período de luto decidem persistir até porque, para
-                    que desistir de algo que já estava pronto? Deram continuidade e hoje, a Me Gusta entrega tudo que um
-                    Gelato “comum” promete, mas claro que Me Gusta não vende apenas sabor, vende história, esforço,
-                    sabor, amor, exemplo, família e carinho.
-                </p>
-            </div>
-            <div class="item itemC"></div> <!--Div de Banner B-->
-        </div>
-        <div class="titulo"> <!--titulo Mantras-->
-            <h1>Mantras</h1>
-        </div>
-        <br>
-        <div class="fundo_mantra"> <!--Informações mantra A-->
-            <div class="item_mantra MantraA">
-                <p>1. Família
-                    Devido a história da gelateria, Me Gusta prioriza o valor da família, criando um ambiente
-                    confortável para as famílias ficarem a vontade.
-                </p>
-            </div>
-            <div class="item_mantra MantraB"> <!--Informações mantra B-->
-                <p>
-                    2. Exclusividade
-                    Gelatos fabricados para cada indivíduo que degusta, atendendo pessoas com diabetes, colesterol ou
-                    padrões de vida que não consomem açúcar e também amantes de gelato que adoram degustar.
-                </p>
-            </div>
-            <div class="item_mantra MantraC"> <!--Informações mantra C-->
-                <p>3. Sabor
-                    Me gusta não usa bases, adição de açúcar, gordura saturada e muito menos compram sabores prontos,
-                    aqui nós fabricamos cada sabor, contendo menos oxigênio no gelato, menos açúcar, glúten, ou seja,
-                    com todas as características de um gelato, porém com os acréscimos exclusivos.
-                </p>
-            </div>
-        </div>
-        <div class="br">
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-        <div class="fundo_rodapé roda"> <!--Informações rodapé, logo, tamanho e links-->
-            <img src="img/LogoMeGusta.png" height="200px" width="200px">
-            <div class="down_down">
-                <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
-            </div>
-            <div class="slogan_roda">
-                <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
-            </div>
     
+    <div class="fundo_rodapé roda"> <!--Informações rodapé, logo, tamanho e links-->
+        <img src="img/LogoMeGusta.png" height="200px" width="200px">
+        <div class="down_down">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="Img/Facebook.png"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="Img/WhatsApp.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Img/Instragram rodapé.png"></a>
+        </div>
+        <div class="slogan_roda">
+            <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
+        </div>
+
 </body>
 
 </html>

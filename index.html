@@ -38,8 +38,13 @@
             color: #abacb1;
         }
 
+        /* Botão do menu */
         .cabe .navbar-toggler {
             border-color: rgba(224, 224, 216, 0.6);
+        }
+
+        .cabe .navbar-toggler:focus {
+            box-shadow: none;
         }
 
         .slogan {
@@ -53,6 +58,7 @@
         .slogan p {
             font-size: clamp(22px, 4vw, 40px);
             margin-bottom: 0;
+            padding: 5px;
         }
 
         /* A imagem ocupa 100% da largura e mantém a proporção 16:9 em diferentes telas. */
@@ -61,6 +67,52 @@
             height: auto;
             aspect-ratio: 16 / 9;
             object-fit: cover;
+        }
+
+        /* =========================
+           MENU EM TELAS MENORES
+           ========================= */
+        @media (max-width: 991.98px) {
+
+            .cabe .navbar {
+                position: relative;
+            }
+
+            .cabe .navbar-toggler {
+                display: block;
+            }
+
+            /* Menu que abre quando o botão é clicado */
+            .cabe .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                background-color: gray;
+                margin-top: 0 !important;
+            }
+
+            .cabe .navbar-nav {
+                width: 100%;
+                padding: 15px 0;
+                margin: 0 !important;
+            }
+
+            .cabe .navbar-nav .nav-item {
+                text-align: center;
+            }
+
+            .cabe .navbar-nav .nav-link {
+                display: block;
+                padding: 12px 0;
+                font-size: 16px;
+            }
+
+            /* Remove o <br> que estava sendo usado no menu desktop */
+            .cabe .navbar-nav br {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -79,20 +131,15 @@
                     <img src="img/LogoMeGusta.png" alt="Logo Me Gusta" class="img-fluid" style="max-width: 200px;">
                 </a>
 
-                <!-- O botão aparece para abrir o menu quando a tela é pequena. -->
+                <!-- Botão que aparece em telas menores -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
                     aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
                     <span class="navbar-toggler-icon"></span>
-                </button><!--Botão quando o menu está recolhido-->
+                </button>
 
-                <!-- "collapse" permite esconder/mostrar o menu no celular. -->
-                <div class="collapse navbar-collapse" style="margin-top: -40px; " id="menuPrincipal">
+                <!-- Menu que abre ao clicar no botão -->
+                <div class="collapse navbar-collapse" style="margin-top: -40px;" id="menuPrincipal">
 
-                    <!--
-                        text-center centraliza o menu em telas pequenas.
-                        text-lg-start alinha à esquerda em telas grandes.
-                        ms-lg-4, mt-lg-0 e flex-lg-nowrap são aplicados a partir do tamanho "lg".
-                    -->
                     <ul class="navbar-nav ms-lg-4 text-center text-lg-start mt-3 mt-lg-0 flex-lg-nowrap">
                         <br>
                         <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
@@ -102,32 +149,25 @@
                         <li class="nav-item"><a class="nav-link" href="Localização.html">LOCALIZAÇÃO</a></li>
                         <li class="nav-item"><a class="nav-link" href="PainelSatisfação.html">PAINEL SATISFAÇÃO</a></li>
                         <li class="nav-item"><a class="nav-link" href="Sig a gente.html">SIGA A GENTE</a></li>
-
                     </ul>
+
                 </div>
             </div>
         </nav>
 
-        <!-- ps-3 usa um espaçamento menor em telas pequenas e ps-lg-5 aumenta o espaçamento em telas grandes. -->
         <div class="slogan text-start container-fluid ps-3 ps-lg-5 py-3">
 
-            <!--div para o slogan-->
             <p>Exclusividade<br>e verdadeiro<br>sabor, Isso é<br>Me Gusta!</p>
-            <!--slogan-->
 
         </div>
     </header>
 
-    <!-- O carrossel do Bootstrap se adapta à largura disponível da tela. -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-
-                <!-- w-100 faz a imagem ocupar 100% da largura disponível. -->
                 <img src="img/img_carrossel1.png" class="d-block w-100" alt="Carrossel Me Gusta imagem 1">
-
             </div>
 
             <div class="carousel-item">
@@ -141,8 +181,6 @@
         </div>
     </div>
 
-
-    <!-- O JavaScript do Bootstrap permite o funcionamento do menu responsivo e do carrossel. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
