@@ -118,13 +118,118 @@
 
 
         }
+
         .linha {
-      width: 70%;
-      height: 5px;
-      background-color: rgb(110, 52, 1);
-      margin: 20px auto;
-      border-radius: 10px;
-    }
+            width: 70%;
+            height: 5px;
+            background-color: rgb(110, 52, 1);
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .bannerPrdotuos {
+            height: 600px;
+            width: 1330px;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        .texto_produtosExto {
+            font-family: "Poller One", sans-serif;
+            /*fonte usada no slogan*/
+            text-align: center;
+            /*centralizando o slogan*/
+            font-size: 35px;
+            color: rgb(111, 52, 0);
+            /*cor da fonte do slogan*/
+            /*preenche um espaço interno a esquerda do slogan*/
+            padding-top: 30px;
+            /*preenche um espaço interno superior do slogan*/
+        }
+
+        .item {
+            /*configuração de itens*/
+            width: 20%;
+            height: 600px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+
+        }
+
+        .itemA {
+            /*informação item A*/
+            background-image: url(img/SorveteCafeBranco.jpg);
+            bottom: 0px;
+            height: 350px;
+            width: 600px;
+            border-radius: 10px;
+
+        }
+
+        .itemB {
+            /*informação item B*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .itemC {
+            /*informação item C*/
+            background-image: url(img/BannerSextaDasCriancas.png);
+            bottom: 0px;
+            height: 300px;
+            width: 600px;
+            border-radius: 10px;
+
+        }
+
+        .itemD {
+            /*informação item D*/
+            background-image: url(img/SorveteMelaoComPresunto.png);
+            bottom: 0px;
+            height: 300px;
+            width: 600px;
+            border-radius: 10px;
+
+        }
+
+        .itemE {
+            /*informação item E*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .itemF {
+            /*informação item F*/
+            font-family: "Oswald", sans-serif;
+            flex-grow: 1;
+            line-height: 2em;
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+        }
+
+        .banner {
+            /*fundo degrade*/
+            border-radius: 10px;
+            height: 200px;
+            text-align: center;
+        }
+
+        .conteudo {
+            /*conteudo principal da página*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -148,7 +253,33 @@
         </div>
         <div class="clear"></div>
     </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="centro">
+        <img class="bannerPrdotuos" src="img/BannerProdutos.jpg">
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <hr class="linha">
+
+    <br>
+    <br>
+    <br>
+
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
@@ -156,40 +287,138 @@
             <div class="carousel-item active">
 
                 <!-- w-100 faz a imagem ocupar 100% da largura disponível. -->
-                <img src="img/carrosselProdutos.png" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 1">
+                <img src="img/carrosselProdutos.png" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 1">
 
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos2.png" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 2">
+                <img src="img/carrosselProdutos2.png" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 2">
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos3.jpg" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 3">
+                <img src="img/carrosselProdutos3.jpg" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 3">
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos4.jpg" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 3">
+                <img src="img/carrosselProdutos4.jpg" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 3">
             </div>
 
             <div class="carousel-item">
-                <img src="img/carrosselProdutos5.jpg" class="d-block w-100" height="600" alt="Carrossel Me Gusta imagem 3">
+                <img src="img/carrosselProdutos5.jpg" class="d-block w-100" height="600"
+                    alt="Carrossel Me Gusta imagem 3">
             </div>
 
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
     </div>
     </div>
     </div>
+
+    <br>
+    <br>
+    <br>
+
     <hr class="linha">
+
+    <br>
+    <br>
+    <br>
+
+    <div class="texto_produtosExto">
+        <p>Conheça nossos sabores favoritos </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="banner"> <!--texto de informação -->
+        <div class="conteudo">
+            <div class="item itemA"></div>
+            <div class="item itemB">
+                <p>
+                    Café Branco: Uma parente do criador da Me Gusta deu uma sugestão de sabor, sendo o café; Elizandro
+                    criou esse sabor de gelato usando suas especiarias e técnicas. Mas, na Me Gusta o céu é o limite,
+                    gostamos de aprimorar e sempre inovar até mesmo nas inovações, então, com muitos estudos Elizandro
+                    conseguiu criar o novo sabor de café, o café branco, com uma qualidade aprimorada do gelato inicial
+                    de café, esse novo sabor conta com pedaços pequenos de café torrado, entregando aroma, sabor e
+                    experiência.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="banner"> <!--Gelato dois, informações, link e imagens-->
+        <div class="conteudo">
+            <div class="item itemE">
+                <p>
+                    Morango sem açúcar: Um sabor tradicional no mundo todo, porém Elizandro decidiu priorizar a
+                    autenticidade, criou uma versão adaptada para pessoas diabéticas ou que simplesmente não consomem
+                    açúcar mas estão com “aquela vontade de comer um docinho”, então foi criado o Fresa sin azúcar
+                    inovando com seu sabor intenso.
+                </p>
+            </div>
+            <div class="item itemC"></div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="banner"> <!--Gelato três, informações, link e imagens-->
+        <div class="conteudo">
+            <div class="item itemD"></div>
+            <div class="item itemF">
+                <p>
+                    Melão com presunto:Um sabor que honra o nosso mantra na exclusividade, um sabor exótico com a refrescância do melão e a experiência de sentir um sabor exótico, deixando o degustador em dúvida se é gostoso ou incrível. Sua aparência é apetitosa e encantadora, agradando desde um adulto especializado em degustar gelatos até uma criança tendo uma nova experiência ao provar esse sabor inédito.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <div class="fundo_rodapé roda"><!--rodapé, link, tamanho-->
         <img src="img/LogoMeGusta.png" height="200px" width="200px">
         <div class="down_down">
