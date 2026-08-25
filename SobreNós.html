@@ -12,6 +12,7 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -37,6 +38,20 @@
             background-image: url(img/Banner\ MENU.png);
             width: 100%;
             height: 200px;
+            background-size: cover;
+        }
+
+        .cabe {
+            position: relative;
+            width: 100%;
+        }
+
+        .logo {
+            position: relative;
+        }
+
+        .logo img {
+            display: block;
         }
 
         .slogan {
@@ -55,6 +70,81 @@
         .clear {
             clear: both;
         }
+
+
+        /* =========================
+           BOTÃO MENU MOBILE
+        ========================= */
+
+        .cabe .navbar-toggler {
+            display: none;
+            border: 1px solid rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.15);
+            padding: 10px 16px;
+            margin: 0;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .cabe .navbar-toggler:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: none !important;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            position: relative;
+        }
+
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+        }
+
+        .navbar-toggler-icon::before {
+            top: -7px;
+        }
+
+        .navbar-toggler-icon::after {
+            top: 7px;
+        }
+
+
+        /* =========================
+           MENU DE LINKS
+        ========================= */
+
+        .menu-links {
+            position: relative;
+        }
+
+        .menu-links ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-links ul li {
+            list-style: none;
+        }
+
+        .menu-links ul li a {
+            text-decoration: none;
+        }
+
+        .menu-links.collapse:not(.show) {
+            display: none;
+        }
+
 
         .conteudo {
             /*texto de informações da página*/
@@ -206,6 +296,225 @@
         .rapai2{
             border-radius: 100px;
         }
+
+
+        /* =========================
+           TELAS GRANDES
+        ========================= */
+
+        @media (min-width: 768px) {
+            .menu-links.collapse {
+                display: block !important;
+            }
+
+            .menu-links {
+                position: absolute;
+
+                left: 260px;
+                top: 49px;
+
+                margin: 0;
+                padding: 0;
+
+                width: auto;
+                max-width: calc(100% - 310px);
+            }
+
+            .menu-links ul {
+                display: flex;
+
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                align-items: center;
+
+                margin: 0;
+                padding: 0;
+
+                width: 100%;
+                max-width: 100%;
+
+                white-space: nowrap;
+
+                justify-content: space-between;
+            }
+
+            .menu-links ul li {
+                list-style: none;
+                display: block;
+                margin-right: 0;
+                flex-shrink: 1;
+            }
+
+            .menu-links ul li:last-child {
+                margin-right: 0;
+            }
+
+            .menu-links ul li a {
+                text-decoration: none;
+                white-space: nowrap;
+            }
+        }
+
+
+        /* =========================
+           TELAS PEQUENAS
+        ========================= */
+
+        @media (max-width: 767.98px) {
+
+            /* Cabeçalho */
+
+            .menu {
+                height: auto;
+                min-height: 120px;
+                padding-bottom: 10px;
+                position: relative;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .cabe .navbar-toggler {
+                display: block !important;
+                position: absolute;
+                top: 18px;
+                right: 20px;
+                z-index: 1100;
+            }
+
+            .logo {
+                position: static;
+                float: none;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
+
+            .logo img {
+                width: 130px !important;
+                height: auto !important;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu-links {
+                position: absolute;
+
+                top: 100%;
+                left: 0;
+
+                width: 100%;
+
+                background-color: rgba(120, 120, 120, 0.95);
+
+                z-index: 1000;
+
+                padding: 0;
+            }
+
+            .menu-links ul {
+                float: none;
+                width: 100%;
+
+                margin: 0;
+                padding: 20px 0;
+
+                text-align: center;
+
+                display: block;
+            }
+
+            .menu-links ul li {
+                display: block;
+                width: 100%;
+                padding: 14px 0;
+            }
+
+            .menu-links ul li a {
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-decoration: none;
+            }
+
+            .menu-links ul li a:hover {
+                color: #e0e0d8;
+            }
+
+
+            /* =========================
+               CONTEÚDO MOBILE
+            ========================= */
+
+            .slogan {
+                font-size: 22px;
+                padding-top: 15px;
+            }
+
+            .mantra1,
+            .mantra2,
+            .mantra3 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .item_mantra {
+                width: 90%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+
+            .mantra1 img,
+            .mantra2 img,
+            .mantra3 img {
+                width: 90%;
+                height: auto;
+                max-width: 700px;
+            }
+
+            .rapai2 {
+                width: 90%;
+                height: auto;
+                max-width: 400px;
+            }
+
+            body > img[src$="m.png"] {
+                width: 100%;
+                height: auto;
+            }
+
+
+            /* =========================
+               RODAPÉ MOBILE
+            ========================= */
+
+            .fundo_rodapé {
+                height: auto;
+                min-height: 200px;
+                text-align: center;
+                padding: 20px 0;
+                align-items: center;
+            }
+
+            .fundo_rodapé>img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .slogan_roda {
+                margin: 0 auto;
+                padding-top: 10px;
+            }
+
+            .down_down {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+        }
     </style>
 </head>
 
@@ -215,7 +524,13 @@
             <div class="logo">
                 <img src="img/LogoMeGusta.png" width="200px"> <!--logo Me Gusta-->
             </div>
-            <div>
+
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse menu-links" id="menuMobile">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="SobreNós.html">SOBRE NÓS</a></li>
@@ -282,6 +597,10 @@
         <div class="slogan_roda">
             <p>Exclusividade<br> e verdadeiro<br> sabor, Isso é <br> Me Gusta!</p>
         </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
 </body>
 
