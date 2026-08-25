@@ -910,17 +910,12 @@
 
                 <div class="modal-body">
 
-
                     <div class="container">
-
-
-                        <hr class="linha">
-
 
                         <div class="registro">
 
 
-                            <form>
+                            <form id="formCadastro" onsubmit="return validarCadastro(event)" novalidate>
 
 
                                 <!-- NOME -->
@@ -934,7 +929,7 @@
                                     </label>
 
 
-                                    <input required type="text" placeholder="Digite seu nome completo">
+                                    <input id="nome" required type="text" placeholder="Digite seu nome completo">
 
                                 </div>
 
@@ -950,7 +945,7 @@
                                     </label>
 
 
-                                    <input type="text" placeholder="000.000.000-00" required>
+                                    <input id="cpf" type="text" placeholder="000.000.000-00" required>
 
                                 </div>
 
@@ -966,7 +961,7 @@
                                     </label>
 
 
-                                    <input required type="email" placeholder="Digite seu e-mail">
+                                    <input id="email" required type="email" placeholder="Digite seu e-mail">
 
                                 </div>
 
@@ -982,7 +977,7 @@
                                     </label>
 
 
-                                    <input required type="text" placeholder="Rua, número e bairro">
+                                    <input id="endereco" required type="text" placeholder="Rua, número e bairro">
 
                                 </div>
 
@@ -998,7 +993,7 @@
                                     </label>
 
 
-                                    <input required type="text" placeholder="(00) 00000-0000">
+                                    <input id="telefone" required type="text" placeholder="(00) 00000-0000">
 
                                 </div>
 
@@ -1031,6 +1026,31 @@
 
 
     </div>
+
+
+    <script>
+        function validarCadastro(event) {
+
+            var nome = document.getElementById("nome").value;
+            var cpf = document.getElementById("cpf").value;
+            var email = document.getElementById("email").value;
+            var endereco = document.getElementById("endereco").value;
+            var telefone = document.getElementById("telefone").value;
+
+            if (!nome || !cpf || !email || !endereco || !telefone) {
+                alert("Preencha todos os campos para enviar!");
+            } else {
+                alert("Cadastro enviado com sucesso!");
+
+                var modalEl = document.getElementById("exampleModal");
+                var modalInstance = bootstrap.Modal.getInstance(modalEl);
+                modalInstance.hide();
+                document.getElementById("formCadastro").reset();
+            }
+
+            return false;
+        }
+    </script>
 
 
     <!-- -------------------------------------------------------- -->
